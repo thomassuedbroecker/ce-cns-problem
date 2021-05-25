@@ -67,3 +67,4 @@ The bash script does following simplified steps:
 5. Deploy `articles` microservice is defined as `local cluster` here we need to use the `namespace`
 6. Deploy `web-api` with needed Keycloak and articles urls as environment variables
 7. Reconfigure `web-app` with the needed keycloak and web-api urls as environment variables
+
