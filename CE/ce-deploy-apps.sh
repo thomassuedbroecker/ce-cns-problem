@@ -8,6 +8,7 @@
 export PROJECT_NAME=$MYPROJECT
 export RESOURCE_GROUP=default
 export REPOSITORY=tsuedbroecker
+export REGION="us-south"
 export NAMESPACE=""
 export KEYCLOAK_URL=""
 export WEBAPI_URL=""
@@ -55,6 +56,7 @@ function configureKeycloak() {
 
 function setupCLIenvCE() {
   ibmcloud target -g $RESOURCE_GROUP
+  ibmcloud target -r $REGION
   ibmcloud ce project get --name $PROJECT_NAME
   ibmcloud ce project select -n $PROJECT_NAME
   #to use the kubectl commands
