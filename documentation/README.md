@@ -14,7 +14,7 @@ The image below shows the dependencies of the example:
 
 ![](images/cns-ce-architecture.png)
 
-In the following table you see the container, the exposed routes, uses a TLS Certificate and the scale to zero configuration.
+In the following table you see the container, the exposed routes, uses of TLS Certificate and the scale to zero configuration.
 
 | Container | Route | TLS Certificate | Scale to zero configured |
 | --- | --- | --- | --- |
@@ -33,8 +33,8 @@ In the following table you see the container, the exposed routes, uses a TLS Cer
 
 After you complete this workshop, you'll understand the following:
 
-* Deploying an existing example microservices application with to Code Engine
-    * Usage of the IBM Cloud Code Engine CLI and `kubectl` for the bash script automation
+* Deploying an existing example microservices application to Code Engine
+    * Usage of the `IBM Cloud Code Engine CLI` and `kubectl` for the bash script automation
 * Use the `Out-Of-The-Box` monitoring for the example application
 * Use the `Out-Of-The-Box` logging for the example application
 
