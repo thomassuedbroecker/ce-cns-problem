@@ -18,7 +18,7 @@ Use following link to directly navigate to the Code Engine projects in IBM Cloud
 
 ### Step 4: Create a `Code Engine` project called `cloud-native-starter`
 
-Enter following values and select create
+Enter following values and select create and wait until your project is created.
 
 * Location      : `Dallas`
 * Name          : `cloud-native-starter-[YOUR-EXTENTION]` (The name must be unique in the in Cloud Location `Dallas`)
