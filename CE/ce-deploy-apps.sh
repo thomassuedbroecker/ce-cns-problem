@@ -5,7 +5,7 @@
 # command documentation: https://cloud.ibm.com/docs/codeengine?topic=codeengine-cli#cli-application-create
 
 # **************** Global variables
-export PROJECT_NAME=cloud-native-starter
+export PROJECT_NAME=$MYPROJECT
 export RESOURCE_GROUP=default
 export REPOSITORY=tsuedbroecker
 export NAMESPACE=""
