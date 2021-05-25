@@ -60,11 +60,10 @@ bash ce-deploy-apps.sh
 
 The bash script does following simplified steps:
 
-1. Code engine cli usage configuration and get **namespace** for later usage
+1. Prepare the [Code Engine CLI](https://cloud.ibm.com/docs/codeengine?topic=codeengine-cli) for later usage and get the **namespace** for later usage, with [`kubectl`](https://kubernetes.io/docs/reference/kubectl/overview/).
 2. Deploy `web-app` to get needed route for the redirect of Keycloak
-3. Deploy Keycloak simply as a container (that's the reason why not scale to zero (stateful))
-4. Configure the Keycloak realm json file based on the web-app url and create realm
-5. Deploy `articles` microservice is defined as `local cluster` here we need to use the `namespace`
-6. Deploy `web-api` with needed Keycloak and articles urls as environment variables
-7. Reconfigure `web-app` with the needed keycloak and web-api urls as environment variables
-
+3. Deploy `Keycloak` simply as a container (that's the reason why not scale to zero (stateful))
+4. Configure the `Keycloak` realm json file based on the web-app url and create realm.
+5. Deploy `articles` microservice is defined as `local cluster` here we need to use the `namespace`.
+6. Deploy `web-api` with needed `Keycloak` and articles urls as environment variables.
+7. Reconfigure `web-app` with the needed `Keycloak` and web-api urls as environment variables.
