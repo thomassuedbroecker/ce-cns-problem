@@ -41,14 +41,14 @@ The `articles` microservice doesn't need an to be invoked from external, so it's
 * Basics about the deployment
 
 For an easy deployment prebuild containers were created and pushed to a [Quay container registry](https://quay.io/user/tsuedbroecker).
-In the following table you see the **application**/container, the exposed **routes**, uses of **TLS Certificate**, the **scale to zero** configuration, the **container registry** where the prebuild container come from and the configuration for **vCPU** and **Memory in GB**.
+In the following table you see the **application**/container, the exposed **routes**, uses of **TLS Certificate**, the **scale to zero** configuration, the **container registry** where the prebuild container come from, the configuration for **vCPU** and **Memory in GB** and the **min/max Instances** for the applications.
 
-| **Application** | **Route** | **TLS Certificate** | **Scale to zero** | **Container Registry** | **vCPU** | **Memory** |
-| --- | --- | --- | --- |  --- | --- |  --- |
-| web-app | external | yes |yes | Quey | 0.5 | 1 GB |
-| keycloak | external | yes | no | Docker | 0.5 | 1 GB |
-| web-api  | external | yes | yes | Quey | 0.5 | 1 GB |
-| articles | internal | no | yes | Quey | 0.25 | 0.5G GB |
+| **Application** | **Route** | **TLS Certificate** | **Scale to zero** | **Container Registry** | **vCPU** | **Memory** | **min Instances** | **max Instances** |
+| --- | --- | --- | --- |  --- | --- |  --- | --- | --- |
+| web-app | external | yes |yes | Quey | 0.5 | 1 GB | 0 | 1 |
+| keycloak | external | yes | no | Docker | 0.5 | 1 GB | 1 | 1 |
+| web-api  | external | yes | yes | Quey | 0.5 | 1 GB | 0 | 1 |
+| articles | internal | no | yes | Quey | 0.25 | 0.5G GB | 0 | 1 |
 
 _Note:_ The project also contains also the source code, which you can use to create an own version of the microservices based example application.
 
