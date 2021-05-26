@@ -4,9 +4,20 @@
 **UNDER CONSTRUCTION**
 **------------------**
 
+### Objectives
+
+After you complete this workshop, you'll have a basic understanding of the following:
+
+* Deploying an existing example microservices based application to `Code Engine`
+    * Usage of the `IBM Cloud Code Engine CLI` and `kubectl` for the bash script automation
+* Use the `Out-Of-The-Box` monitoring for the example application
+* Use the `Out-Of-The-Box` logging for the example application
+
+> _The scope of this workshop is not to explain every aspect of application running a application with `Code Engine`._
+
 ### Architecture
 
-The following diagram shows the architecture of the sample application. There is a `web-app` frontend application that serves the Javascript/Vue.js code to the browser. The `web-app` code running in the browser invokes a REST API of the `web-api` microservice. The `web-api` microservice in turn invokes a REST API of the `articles` microservice.
+The following diagram shows the architecture of the sample application. There is a `web-app` frontend application that serves the Javascript/Vue.js code to the browser. The `web-app` code running in the browser invokes a REST API of the `web-api` microservice. The `web-api` microservice in turn invokes a REST API of the `articles` microservice. [`Keycloak`](https://www.keycloak.org/) is used for the `Identity and Access Manegement` of the microservices based application.
 
 To see the results in the web application, users need to be authenticated and they need to have the role `user`.
 
@@ -14,6 +25,7 @@ The image below shows the dependencies of the example:
 
 ![](images/cns-ce-architecture.png)
 
+For an easy deployment containers were prebuild and push to a [Quay container registry](https://quay.io/user/tsuedbroecker).
 In the following table you see the **application**/container, the exposed **routes**, uses of **TLS Certificate**, the **scale to zero** configuration and the **container registry** where the prebuild container come from.
 
 | **Application** | **Route** | **TLS Certificate** | **Scale to zero** | **Container Registry** | 
@@ -28,17 +40,6 @@ In the following table you see the **application**/container, the exposed **rout
 |  Time | Level  |
 | - | - |
 | 30 min | beginners |
-
-### Objectives
-
-After you complete this workshop, you'll understand the following:
-
-* Deploying an existing example microservices application to Code Engine
-    * Usage of the `IBM Cloud Code Engine CLI` and `kubectl` for the bash script automation
-* Use the `Out-Of-The-Box` monitoring for the example application
-* Use the `Out-Of-The-Box` logging for the example application
-
-> _The scope of this workshop is not to explain every aspect of application running a application with Code Engine._
 
 ### About this workshop
 
