@@ -82,12 +82,12 @@ function deployKeycloak(){
 
     ibmcloud ce application create --name keycloak \
                                 --image "quay.io/keycloak/keycloak:10.0.2" \
-                                --cpu 1 \
+                                --cpu 0.5 \
+                                --memory 1G \
                                 --env KEYCLOAK_USER="admin" \
                                 --env KEYCLOAK_PASSWORD="admin" \
                                 --env PROXY_ADDRESS_FORWARDING="true" \
                                 --max-scale 1 \
-                                --memory 2G \
                                 --min-scale 1 \
                                 --port 8080 
 
@@ -161,11 +161,11 @@ function reconfigureKeycloak (){
 function deployArticles(){
 
     ibmcloud ce application create --name articles --image "quay.io/$REPOSITORY/articles-ce:v2" \
-                                   --cpu 1 \
+                                   --cpu 0.25 \
+                                   --memory 0.5G \
                                    --env QUARKUS_OIDC_AUTH_SERVER_URL="$KEYCLOAK_URL/auth/realms/quarkus" \
                                    --max-scale 1 \
-                                   --cluster-local \
-                                   --memory 2G \
+                                   --cluster-local \                                
                                    --min-scale 0
                                    # --port 8082
     
@@ -198,14 +198,15 @@ function deployArticles(){
 function deployWebAPI(){
 
     echo "Articles URL: http://articles.$NAMESPACE.svc.cluster.local/articles"
-
+    
+    # Valid vCPU and memory combinations: https://cloud.ibm.com/docs/codeengine?topic=codeengine-mem-cpu-combo
     ibmcloud ce application create --name web-api \
                                 --image "quay.io/$REPOSITORY/web-api-ce:v6" \
-                                --cpu 1 \
+                                --cpu 0.5 \
+                                --memory 1G \
                                 --env QUARKUS_OIDC_AUTH_SERVER_URL="$KEYCLOAK_URL/auth/realms/quarkus" \
                                 --env CNS_ARTICLES_URL="http://articles.$NAMESPACE.svc.cluster.local/articles" \
                                 --max-scale 1 \
-                                --memory 2G \
                                 --min-scale 0 \
                                 --port 8081 
 
@@ -241,12 +242,12 @@ function deployWebApp(){
 
     ibmcloud ce application create --name web-app \
                                 --image "quay.io/$REPOSITORY/web-app-ce:v2" \
-                                --cpu 1 \
+                                --cpu 0.5 \
+                                --memory 1G \
                                 --env VUE_APP_KEYCLOAK="$KEYCLOAK_URL/auth" \
                                 --env VUE_APP_ROOT="/" \
                                 --env VUE_APP_WEBAPI="$WEBAPI_URL/articles" \
                                 --max-scale 1 \
-                                --memory 2G \
                                 --min-scale 0 \
                                 --port 8080 
                                 # [--argument ARGUMENT] \

@@ -22,3 +22,10 @@ In the following image you see:
 Here you find an overview of the currenly running applications. ( FYI `Code Engine` definition: `A program that serves HTTP requests`)
 
 ![](images/cns-ce-inspect-project-02.png)
+
+### Step 4: Open the `web-api` application
+
+Here we find the configuration for the application.
+
+
+_Note:_ For more details about valid vCPU and Memory combinations please visit the documentation [here](https://cloud.ibm.com/docs/codeengine?topic=codeengine-mem-cpu-combo) .

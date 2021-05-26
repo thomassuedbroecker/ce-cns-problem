@@ -19,8 +19,8 @@ echo " articles"
 echo "************************************"
 cd $ROOT_PATH/articles
 docker login quay.io
-docker build -t "quay.io/$REPOSITORY/articles-ce:v2" -f Dockerfile .
-docker push "quay.io/$REPOSITORY/articles-ce:v2"
+docker build -t "quay.io/$REPOSITORY/articles-ce:v3" -f Dockerfile .
+docker push "quay.io/$REPOSITORY/articles-ce:v3"
 
 echo ""
 
@@ -30,5 +30,5 @@ echo "************************************"
 
 cd $ROOT_PATH/web-api
 docker login quay.io
-docker build -t "quay.io/$REPOSITORY/web-api-ce:v6" -f Dockerfile .
-docker push "quay.io/$REPOSITORY/web-api-ce:v6"
+docker build -t "quay.io/$REPOSITORY/web-api-ce:v7" -f Dockerfile .
+docker push "quay.io/$REPOSITORY/web-api-ce:v7"

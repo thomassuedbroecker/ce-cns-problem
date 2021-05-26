@@ -12,14 +12,20 @@ RUN mvn package
 #           PRODUCTION
 ##############################
 FROM adoptopenjdk/openjdk11-openj9:ubi-minimal
+
 ENV JAVA_OPTIONS="-Dquarkus.http.host=0.0.0.0 -Djava.util.logging.manager=org.jboss.logmanager.LogManager"
 ENV AB_ENABLED=jmx_exporter
+
 RUN mkdir /opt/shareclasses
 # OpenShift permissions:
 RUN chmod a+rwx -R /opt/shareclasses
 RUN mkdir /opt/app
-COPY --from=BUILD /usr/src/app/target/lib/* /opt/app/lib/
-COPY --from=BUILD /usr/src/app/target/*-runner.jar /opt/app/app.jar
+
+COPY --from=BUILD --chown=1001 /usr/src/app/target/quarkus-app/lib/ /deployments/lib/
+COPY --from=BUILD --chown=1001 /usr/src/app/target/quarkus-app/*.jar /deployments/
+COPY --from=BUILD --chown=1001 /usr/src/app/target/quarkus-app/app/ /deployments/app/
+COPY --from=BUILD --chown=1001 /usr/src/app/target/quarkus-app/quarkus/ /deployments/quarkus/
+
 # Port 8080 will be used by "Code Engine" for the local OOTB configuration. (before we used 8082)
 # useful entry on GitHub https://github.com/knative/serving/issues/7450
 EXPOSE 8080
