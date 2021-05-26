@@ -67,12 +67,29 @@ function setupCLIenvCE() {
   NAMESPACE=$(kubectl get namespaces | awk '/NAME/ { getline; print $0;}' | awk '{print $1;}')
   echo "Namespace: $NAMESPACE"
   kubectl get pods -n $NAMESPACE
-  
-  PODS=$(kubectl get pods -n $NAMESPACE | awk '/NAME/ { getline; print $0;}' | awk '{print $1;}')
-  
-  if [$PODS!="No resources found in $NAMESPACE namespace."]
+
+
+  # CHECK=$(kubectl get pods -n $NAMESPACE)
+  # echo "**********************************"
+  # echo "Check for existing pods? '$CHECK'"
+  # echo "**********************************"
+  # COMPARE="No resources found in $NAMESPACE namespace."
+  # if [[ "$CHECK" = "$COMPARE" ]];
+  # then
+  #   echo "Error: Wait until all pods are deleted inside the $NAMESPACE."
+  #   echo "The script exits here!"
+  #   exit 1
+  # fi
+
+  CHECK=$(ibmcloud ce project get -n $PROJECT_NAME | awk '/Apps/ {print $2;}')
+  echo "**********************************"
+  echo "Check for existing apps? '$CHECK'"
+  echo "**********************************"
+  if [ $CHECK != 0 ];
   then
-    echo "Error: Wait until all pods are deleted inside the $NAMESPACE. The script exits here"
+    echo "Error: There are remaining '$CHECK' apps."
+    echo "Wait until all apps are deleted inside the $PROJECT_NAME."
+    echo "The script exits here!"
     exit 1
   fi
  
