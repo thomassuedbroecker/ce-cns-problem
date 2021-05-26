@@ -18,7 +18,7 @@ After you complete this workshop, you'll have a basic understanding of the follo
 ### Architecture
 
 The example application simply shows articles protected with an `Identity and Access Manegement`.
-In the following you see the frontend with the artiecls and the valid user `alice` is logged on.
+In the following picture you see the frontend with the articles and the valid user `alice` is logged on.
 
 ![](images/cns-ce-example-application-00.png)
 
