@@ -1,5 +1,7 @@
 # Lab 3: Application Monitoring
 
+Here we use the [IBM Cloud Monitoring](https://cloud.ibm.com/docs/monitoring?topic=monitoring-getting-started#getting-started) (lite plan).
+
 ### Step 1: Go back to the project overview
 
 ![](images/cns-ce-monitoring-01.png)
