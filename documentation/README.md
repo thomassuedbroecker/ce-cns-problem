@@ -35,6 +35,8 @@ In the following table you see the **application**/container, the exposed **rout
 | web-api  | external | yes | yes | Quey |
 | articles | internal | no | yes | Quey |
 
+_Note:_ The project also contains also the source code, which you use to create an own version of the microservices based application.
+
 ### Estimated time and level
 
 |  Time | Level  |
