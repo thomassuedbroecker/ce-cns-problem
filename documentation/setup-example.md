@@ -8,6 +8,16 @@
 
 Open this [link]() and follow the guided steps.
 
+* Expected costs for the workshop
+
+Here you can find the [`Code Engine` actual pricing](https://www.ibm.com/cloud/code-engine/pricing).
+`Code Engine` has a `free tier` per month and we expect, if you haven't used that `free tier` in month you execute the workshop, the workshop will not create any costs.
+
+The image blow shows a screen shot from `26. May 2021` of the `free tier`.
+
+![](images/cns-ce-pricing-20210526.png)
+
+
 ### Step 2: Logon to IBM Cloud and navigate to the Code Engine projects
 
 Use following link to directly navigate to the Code Engine projects in IBM Cloud.
