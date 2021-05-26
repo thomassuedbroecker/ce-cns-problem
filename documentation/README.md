@@ -41,7 +41,7 @@ The `articles` microservice doesn't need an to be invoked from external, so it's
 * Basics about the deployment
 
 For an easy deployment prebuild containers were and push to a [Quay container registry](https://quay.io/user/tsuedbroecker).
-In the following table you see the **application**/container, the exposed **routes**, uses of **TLS Certificate**, the **scale to zero** configuration, the **container registry** where the prebuild container come from and the configuration for vCPU and Memory in GB
+In the following table you see the **application**/container, the exposed **routes**, uses of **TLS Certificate**, the **scale to zero** configuration, the **container registry** where the prebuild container come from and the configuration for **vCPU** and **Memory in GB**.
 
 | **Application** | **Route** | **TLS Certificate** | **Scale to zero** | **Container Registry** | **vCPU** | **Memory** |
 | --- | --- | --- | --- |  --- | --- |  --- |

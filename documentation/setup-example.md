@@ -102,9 +102,9 @@ export REPOSITORY=tsuedbroecker #the name of the public container repository on 
 export REGION="us-south" #the region with is used when you choose Dallas as location during the creation of the project
 ```
 
-:
+### Step 11: Open the example application
 
-You can open the example application with the `Web-App` link. 
+The following shows an example execution result of the bash script execution and the last four lines do contain the routes to the applications.
 
 ```sh
 ************************************
@@ -114,7 +114,9 @@ You can open the example application with the `Web-App` link.
  - Web-API  : https://web-api.9xztp8web0h.us-south.codeengine.appdomain.cloud
  - Articles : http://articles.9xztp8web0h.svc.cluster.local/articles
  - Web-App  : https://web-api.9xztp8web0h.us-south.codeengine.appdomain.cloud
- ```
+```
+
+You can open the example application with the `Web-App` link. Copy the link and open the link in a browser.
 
  ### Step 12: Open  the example application in your browser
 
