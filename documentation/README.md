@@ -9,7 +9,7 @@
 After you complete this workshop, you'll have a basic understanding of the following:
 
 * Deploying an existing example microservices based application to `Code Engine`
-    * Usage of the `IBM Cloud Code Engine CLI` and `kubectl` for the bash script automation
+    * See the usage of the `IBM Cloud Code Engine CLI` and `kubectl` in the bash script automation
 * Use the `Out-Of-The-Box` monitoring for the example application
 * Use the `Out-Of-The-Box` logging for the example application
 
