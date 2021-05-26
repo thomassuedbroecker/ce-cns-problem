@@ -34,7 +34,7 @@ The image below shows the dependencies of the example:
 
 In our context it's useful to have a basic understanding of the routing for example application. Based on the functionality of the application, we need `three external routes` for the example application.
 
-Each external route communication will be automaticly secured with a [TLS Certificate](https://en.wikipedia.org/wiki/Transport_Layer_Security)created by `Code Engine` using [Let's encrypt](https://letsencrypt.org/). The three applications are, the `web-app` which will be loaded into the browser, the `Keycloak` that must be available for the authentication/authorization to our application and for potential configruation the `Identity and Access Manegement` and finally the `web-api` microservice, which provides the articles data and will be invoked be the `web-app`.
+Each external route communication will be automaticly secured with a [TLS Certificate](https://en.wikipedia.org/wiki/Transport_Layer_Security)created by `Code Engine` using [Let's encrypt](https://letsencrypt.org/). The three applications are the `web-app`, which will be loaded into the browser, the `Keycloak` that must be available for the authentication/authorization to our application and for potential configruation the `Identity and Access Manegement` and finally the `web-api` microservice, which provides the articles data and will be invoked be the `web-app`.
 
 The `articles` microservice doesn't need an to be invoked from external, so it's configured to provide only an `internal route`, which is used by the  `web-api` microservice to get the articles from.
 
