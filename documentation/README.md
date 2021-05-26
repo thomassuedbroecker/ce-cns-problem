@@ -4,16 +4,16 @@
 **UNDER CONSTRUCTION**
 **------------------**
 
-> This project is related to the [Cloud Native Starter](https://github.com/ibm/cloud-native-starter) project. In the workshop we use a costomized version of the [security example](https://github.com/IBM/cloud-native-starter/blob/master/security/README.md). 
+> This project is related to the [Cloud Native Starter](https://github.com/ibm/cloud-native-starter) project. In the workshop we use a costomized version of the [security application example](https://github.com/IBM/cloud-native-starter/blob/master/security/README.md). 
 
 ### Objectives
 
 After you complete this workshop, you'll have a basic understanding of the following:
 
-* Deploying an existing example microservices based application to `Code Engine`
-    * See the usage of the `IBM Cloud Code Engine CLI` and `kubectl` in the bash script automation
-* Use the `Out-Of-The-Box` monitoring for the example application
-* Use the `Out-Of-The-Box` logging for the example application
+  * Deploying an existing example microservices based application to `Code Engine`
+      * See the usage of the `IBM Cloud Code Engine CLI` and `kubectl` in the bash script automation
+  * Use the `Out-Of-The-Box` monitoring for the example application
+  * Use the `Out-Of-The-Box` logging for the example application
 
 > _The scope of this workshop is not to explain every aspect of application running a application with `Code Engine`._
 
@@ -54,9 +54,9 @@ _Note:_ The project also contains the source code, you can use to customize it t
 
 ### Estimated time and level
 
-|  Time | Level  |
-| - | - |
-| 30 min | beginners |
+  |  Time | Level  |
+  | - | - |
+  | 30 min | beginners |
 
 ### About this workshop
 
@@ -73,6 +73,7 @@ _Note:_ The project also contains the source code, you can use to customize it t
 These are the sections of this workshop, go through all of them in sequence, start with `1. Setup the example application` :
 
  1. [Setup the example application](./setup-example.md)
+ 2. [Inspect the `Code Engine` project](./inspect-the-project.md)
 
 ### Compatibility
 
@@ -87,26 +88,25 @@ Build on [Open Source](https://en.wikipedia.org/wiki/Open_source) technologies:
         
 ### Technology Used
 
-
-* [Microservices architecture](https://en.wikipedia.org/wiki/Microservices)
-* [KEYCLOAK](https://www.keycloak.org)
-* [Jakarta EE](https://jakarta.ee/)
-* [MicroProfile](https://microprofile.io/)
-* [Quarkus](https://quarkus.io/ingress)
-* [Vue.js](https://vuejs.org/)
-* [NGINX](https://www.nginx.com/)
-* [git 2.24.1 or higher](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-* [yarn 1.22.4 or higher](https://yarnpkg.com)
-* [Node.js v14.6.0 or higher](https://nodejs.org/en/)
-* [Apache Maven 3.6.3](https://maven.apache.org/ref/3.6.3/maven-embedder/cli.html)
+  * [Microservices architecture](https://en.wikipedia.org/wiki/Microservices)
+  * [KEYCLOAK](https://www.keycloak.org)
+  * [Jakarta EE](https://jakarta.ee/)
+  * [MicroProfile](https://microprofile.io/)
+  * [Quarkus](https://quarkus.io/ingress)
+  * [Vue.js](https://vuejs.org/)
+  * [NGINX](https://www.nginx.com/)
+  * [git 2.24.1 or higher](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+  * [yarn 1.22.4 or higher](https://yarnpkg.com)
+  * [Node.js v14.6.0 or higher](https://nodejs.org/en/)
+  * [Apache Maven 3.6.3](https://maven.apache.org/ref/3.6.3/maven-embedder/cli.html)
 
 
 ### Credits
 
-**TBD**
+  **TBD**
 
 ### Additional resources
 
-**TBD**
+  **TBD**
 
 

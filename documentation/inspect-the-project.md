@@ -1,4 +1,4 @@
-# Inspect the `Code Engine` project created for the example application
+# Lab 2: Inspect the `Code Engine` project
 
 **------------------**
 **UNDER CONSTRUCTION**

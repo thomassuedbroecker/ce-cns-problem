@@ -1,4 +1,4 @@
-# Setup the example application
+# Lab 1: Setup the example application
 
 **------------------**
 **UNDER CONSTRUCTION**
@@ -16,7 +16,6 @@ Here you can find the [`Code Engine` actual pricing](https://www.ibm.com/cloud/c
 The image blow shows a screen shot from `26. May 2021` of the `free tier`.
 
 ![](images/cns-ce-pricing-20210526.png)
-
 
 ### Step 2: Logon to IBM Cloud and navigate to the Code Engine projects
 
@@ -124,17 +123,16 @@ The following shows an example execution result of the bash script execution and
 
 You can open the example application with the `Web-App` link. Copy the link and open the link in a browser.
 
- ### Step 12: Open  the example application in your browser
+### Step 12: Open  the example application in your browser
 
- Use `user: alice` and `password: alice` for the logon.
+Use `user: alice` and `password: alice` for the logon.
 
- ![](images/cns-ce-example-application-02.png)
+![](images/cns-ce-example-application-02.png)
 
- > Because of scale to zero it could be that the first invocation of the articles cloud take longer. 
+> Because of scale to zero it could be that the first invocation of the articles cloud take longer. 
  
- ![](images/cns-ce-example-application-03.png)
+![](images/cns-ce-example-application-03.png)
  
- 
-Just refresh the browser and you should see following page.
+Just refresh the browser and you then should see following page.
 
  ![](images/cns-ce-example-application-04.png)

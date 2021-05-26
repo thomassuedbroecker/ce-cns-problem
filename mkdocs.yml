@@ -11,8 +11,11 @@ docs_dir: documentation
 
 # Navigation
 nav:
-  - Setup the example application: setup-example.md
-  - Inspect the `Code Engine` project created for the example application: inspect-the-project.md 
+  - Introduction:
+     - Workshop overview: README.md
+  - Labs: 
+    - 1. Setup the example application: setup-example.md
+    - 2. Inspect the `Code Engine` project: inspect-the-project.md 
 
 ## DO NOT CHANGE BELOW THIS LINE
 
