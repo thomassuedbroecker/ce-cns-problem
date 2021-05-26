@@ -11,7 +11,7 @@ Open this [link]() and follow the guided steps.
 * Expected costs for the workshop
 
 Here you can find the [`Code Engine` actual pricing](https://www.ibm.com/cloud/code-engine/pricing).
-`Code Engine` has a `free tier` per month and we expect, if you haven't used that `free tier` in month you execute the workshop, the workshop will not create any costs.
+`Code Engine` has a `free tier` per month and we expect, if you haven't used that `free tier` in month you can execute the workshop without  create any additional costs for you.
 
 The image blow shows a screen shot from `26. May 2021` of the `free tier`.
 
