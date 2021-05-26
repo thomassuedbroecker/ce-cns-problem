@@ -70,16 +70,18 @@ _Note:_ The project also contains the source code, you can use to customize it t
 
 ### Agenda
 
-These are the sections of this workshop, go through all of them in sequence, start with `1. Setup the example application` :
+These are the sections of this workshop, go through all of them in sequence, start with `Lab 1. Setup the example application` :
 
  1. [Setup the example application](./setup-example.md)
  2. [Inspect the `Code Engine` project](./inspect-the-project.md)
+ 3. [Monitoring of the applications](./monitoring.md)
+ 3. [Logging of the applications](./logging.md)
 
 ### Compatibility
 
-* [IBM Cloud Code Engine](https://cloud.ibm.com/docs/codeengine?topic=codeengine-about)
-* [IBM Cloud Monitoring](https://cloud.ibm.com/docs/monitoring?topic=monitoring-getting-started#getting-started) (lite plan)
-* [IBM Cloud Log Analysis](https://cloud.ibm.com/docs/log-analysis?topic=log-analysis-getting-started#getting-started) (lite plan)
+ * [IBM Cloud Code Engine](https://cloud.ibm.com/docs/codeengine?topic=codeengine-about)
+ * [IBM Cloud Monitoring](https://cloud.ibm.com/docs/monitoring?topic=monitoring-getting-started#getting-started) (lite plan)
+ * [IBM Cloud Log Analysis](https://cloud.ibm.com/docs/log-analysis?topic=log-analysis-getting-started#getting-started) (lite plan)
 
 
 Code Engine is build on [Open Source](https://en.wikipedia.org/wiki/Open_source) technologies:
