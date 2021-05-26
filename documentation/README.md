@@ -83,8 +83,7 @@ These are the sections of this workshop, go through all of them in sequence, sta
  * [IBM Cloud Monitoring](https://cloud.ibm.com/docs/monitoring?topic=monitoring-getting-started#getting-started) (lite plan)
  * [IBM Cloud Log Analysis](https://cloud.ibm.com/docs/log-analysis?topic=log-analysis-getting-started#getting-started) (lite plan)
 
-
-Code Engine is build on [Open Source](https://en.wikipedia.org/wiki/Open_source) technologies:
+`Code Engine` is build on [Open Source](https://en.wikipedia.org/wiki/Open_source) technologies:
 
   * [Knative](https://knative.dev/)
   * [Kubernetes](https://knative.dev/)
