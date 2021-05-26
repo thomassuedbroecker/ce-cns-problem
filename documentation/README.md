@@ -45,10 +45,10 @@ In the following table you see the **application**/container, the exposed **rout
 
 | **Application** | **Route** | **TLS Certificate** | **Scale to zero** | **Container Registry** | **vCPU** | **Memory** |
 | --- | --- | --- | --- |  --- | --- |  --- |
-| web-app | external | yes |yes | Quey | 1 | 2 GB |
-| keycloak | external | yes | no | Docker | 1 | 2 GB |
-| web-api  | external | yes | yes | Quey | 1 | 2 GB |
-| articles | internal | no | yes | Quey | 1 | 2 GB |
+| web-app | external | yes |yes | Quey | 0.5 | 1 GB |
+| keycloak | external | yes | no | Docker | 0.5 | 1 GB |
+| web-api  | external | yes | yes | Quey | 0.5 | 1 GB |
+| articles | internal | no | yes | Quey | 0.25 | 0.5G GB |
 
 _Note:_ The project also contains also the source code, which you can use to create an own version of the microservices based example application.
 
