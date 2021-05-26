@@ -29,4 +29,4 @@ COPY --from=BUILD --chown=1001 /usr/src/app/target/quarkus-app/quarkus/ /deploym
 # Port 8080 will be used by "Code Engine" for the local OOTB configuration. (before we used 8082)
 # useful entry on GitHub https://github.com/knative/serving/issues/7450
 EXPOSE 8080
-CMD ["java", "-Xmx128m", "-XX:+IdleTuningGcOnIdle", "-Xtune:virtualized", "-Xscmx128m", "-Xscmaxaot100m", "-Xshareclasses:cacheDir=/opt/shareclasses", "-jar", "/opt/app/app.jar"]
+CMD ["java", "-Xmx128m", "-XX:+IdleTuningGcOnIdle", "-Xtune:virtualized", "-Xscmx128m", "-Xscmaxaot100m", "-Xshareclasses:cacheDir=/opt/shareclasses", "-jar", "/deployments/quarkus-run.jar"]

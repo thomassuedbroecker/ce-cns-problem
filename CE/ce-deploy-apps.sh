@@ -70,7 +70,7 @@ function setupCLIenvCE() {
   
   PODS=$(kubectl get pods -n $NAMESPACE | awk '/NAME/ { getline; print $0;}' | awk '{print $1;}')
   
-  if [  $PODS != "No resources found in $NAMESPACE namespace." ]
+  if [$PODS!="No resources found in $NAMESPACE namespace."]
   then
     echo "Error: Wait until all pods are deleted inside the $NAMESPACE. The script exits here"
     exit 1
@@ -161,13 +161,12 @@ function reconfigureKeycloak (){
 function deployArticles(){
 
     ibmcloud ce application create --name articles --image "quay.io/$REPOSITORY/articles-ce:v3" \
-                                   --cpu 0.25 \
-                                   --memory 0.5G \
+                                   --cpu "0.25" \
+                                   --memory "0.5G" \
                                    --env QUARKUS_OIDC_AUTH_SERVER_URL="$KEYCLOAK_URL/auth/realms/quarkus" \
                                    --max-scale 1 \
-                                   --cluster-local \                                
-                                   --min-scale 0
-                                   # --port 8082
+                                   --min-scale 0 \
+                                   --cluster-local                                        
     
     ibmcloud ce application get --name articles
 
@@ -202,8 +201,8 @@ function deployWebAPI(){
     # Valid vCPU and memory combinations: https://cloud.ibm.com/docs/codeengine?topic=codeengine-mem-cpu-combo
     ibmcloud ce application create --name web-api \
                                 --image "quay.io/$REPOSITORY/web-api-ce:v7" \
-                                --cpu 0.5 \
-                                --memory 1G \
+                                --cpu "0.5" \
+                                --memory "1G" \
                                 --env QUARKUS_OIDC_AUTH_SERVER_URL="$KEYCLOAK_URL/auth/realms/quarkus" \
                                 --env CNS_ARTICLES_URL="http://articles.$NAMESPACE.svc.cluster.local/articles" \
                                 --max-scale 1 \

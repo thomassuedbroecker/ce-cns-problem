@@ -18,4 +18,4 @@ java -Xmx128m \
      -Xshareclasses:cacheDir=/opt/shareclasses \
      -Dcns.articles-url=${CNS_ARTICLES_URL} \
      -jar \
-     /opt/app/app.jar
+     /deployments/quarkus-run.jar
