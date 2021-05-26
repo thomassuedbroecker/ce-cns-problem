@@ -55,16 +55,21 @@ function configureKeycloak() {
 }
 
 function setupCLIenvCE() {
+  
   ibmcloud target -g $RESOURCE_GROUP
   ibmcloud target -r $REGION
   ibmcloud ce project get --name $PROJECT_NAME
   ibmcloud ce project select -n $PROJECT_NAME
+  
   #to use the kubectl commands
   ibmcloud ce project select -n $PROJECT_NAME --kubecfg 
+  
   NAMESPACE=$(kubectl get namespaces | awk '/NAME/ { getline; print $0;}' | awk '{print $1;}')
   echo "Namespace: $NAMESPACE"
   kubectl get pods -n $NAMESPACE
+  
   PODS=$(kubectl get pods -n $NAMESPACE | awk '/NAME/ { getline; print $0;}' | awk '{print $1;}')
+  
   if [  $PODS != "No resources found in $NAMESPACE namespace." ]
   then
     echo "Error: Wait until all pods are deleted inside the $NAMESPACE. The script exits here"
@@ -199,7 +204,6 @@ function deployWebAPI(){
                                 --cpu 1 \
                                 --env QUARKUS_OIDC_AUTH_SERVER_URL="$KEYCLOAK_URL/auth/realms/quarkus" \
                                 --env CNS_ARTICLES_URL="http://articles.$NAMESPACE.svc.cluster.local/articles" \
-                                --env CNS_ARTICLES_DNS="articles" \
                                 --max-scale 1 \
                                 --memory 2G \
                                 --min-scale 0 \

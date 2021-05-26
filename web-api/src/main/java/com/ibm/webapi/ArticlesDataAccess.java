@@ -11,24 +11,15 @@ import org.eclipse.microprofile.config.inject.ConfigProperty;
 @ApplicationScoped
 public class ArticlesDataAccess {
     
-
-    @ConfigProperty(name = "cns.articles-dns")
-    private String articles_dns;
-
     @ConfigProperty(name = "cns.articles-url") 
     private String articles_url;
    
-    private static final int ARTICLES_PORT = 8082;
-    private int articlesPort = ARTICLES_PORT;
-
     private ArticlesService articlesService;
 
     @PostConstruct
     void initialize() {
 
         System.out.println("-->log: com.ibm.articles.ArticlesDataAccess.initialize");
-        System.out.println("-->log: com.ibm.articles.ArticlesDataAccess.initialize DNS: " + articles_dns);
-        System.out.println("-->log: com.ibm.articles.ArticlesDataAccess.initialize Port: " + articlesPort);
         System.out.println("-->log: com.ibm.articles.ArticlesDataAccess.initialize URL: " + articles_url);
 
         URI apiV1 = UriBuilder.fromUri(articles_url).build();
@@ -46,8 +37,6 @@ public class ArticlesDataAccess {
             return articlesService.getArticlesFromService(amount);
         } catch (Exception e) {
             System.err.println("-->log: com.ibm.articles.ArticlesDataAccess.getArticles: Cannot connect to articles service");
-            System.out.println("-->log: com.ibm.articles.ArticlesDataAccess.getArticles DNS: " + articles_dns);
-            System.out.println("-->log: com.ibm.articles.ArticlesDataAccess.getArticles Port: " + articlesPort);
             System.out.println("-->log: com.ibm.articles.ArticlesDataAccess.getArticles URL: " + articles_url);
             throw new NoConnectivity(e);
         }

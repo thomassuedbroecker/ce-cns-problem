@@ -16,3 +16,9 @@ In the following image you see:
 2. The currenly usage of our application.
 
 ![](images/cns-ce-inspect-project-01.png)
+
+### Step 3: Select `Applications`
+
+Here you find an overview of the currenly running applications. ( FYI `Code Engine` definition: `A program that serves HTTP requests`)
+
+![](images/cns-ce-inspect-project-02.png)
