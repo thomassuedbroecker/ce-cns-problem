@@ -29,14 +29,20 @@ Here you find an overview of the currenly running applications. ( FYI `Code Engi
 
 ### Step 4: Open the `web-api` application
 
-Here we find the configuration for the application. 
+Here we find the configurations for the application. 
 
-* First select to `Code` tab. Here you see our container image reference to the Quay container registry.
+* First select the `Code` tab. Here you see our container image reference to the Quay container registry.
 
 ![](images/cns-ce-inspect-project-03.png)
 
-* Then select to `Runtime` tab. The configuration for the instances, vCPU, memory and requests.
+* Then select the `Runtime` tab. The configuration for the instances, vCPU, memory and requests.
 
 ![](images/cns-ce-inspect-project-04.png)
 
-_Note:_ For more details about valid vCPU and Memory combinations please visit the documentation [here](https://cloud.ibm.com/docs/codeengine?topic=codeengine-mem-cpu-combo) .
+> _Note:_ For more details about valid vCPU and Memory combinations please visit the documentation [here](https://cloud.ibm.com/docs/codeengine?topic=codeengine-mem-cpu-combo) .
+
+* Now select to `Environment variables` tab. 
+
+Here you see the routes for the `wep-api` microservice to setup the connections **internal** `articels` microservice and the external `Keycloak` application.
+
+![](images/cns-ce-inspect-project-05.png)

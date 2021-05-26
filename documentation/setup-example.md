@@ -4,7 +4,9 @@
 **UNDER CONSTRUCTION**
 **------------------**
 
-### Step 1: Create a `PayAsYouGo` IBM Cloud Account
+### IBM Cloud Account
+
+#### Step 1: Create a `PayAsYouGo` IBM Cloud Account
 
 Open this [link]() and follow the guided steps.
 
@@ -17,17 +19,19 @@ The image blow shows a screen shot from `26. May 2021` of the `free tier`.
 
 ![](images/cns-ce-pricing-20210526.png)
 
-### Step 2: Logon to IBM Cloud and navigate to the Code Engine projects
+### Create `Code Engine` project
+
+#### Step 1: Logon to IBM Cloud and navigate to the Code Engine projects
 
 Use following link to directly navigate to the Code Engine projects in IBM Cloud.
 
 <https://cloud.ibm.com/codeengine/projects>
 
-### Step 3: Navigate to Code Engine projects in IBM Cloud and press `Create`
+#### Step 2: Navigate to Code Engine projects in IBM Cloud and press `Create`
 
 ![](images/cns-ce-create-project-01.png)
 
-### Step 4: Create a `Code Engine` project called `cloud-native-starter`
+#### Step 3: Create a `Code Engine` project called `cloud-native-starter-[YOUR-EXTENTION]`
 
 Enter following values and select create and wait until your project is created.
 
@@ -41,7 +45,9 @@ The image below shows the created `Code Engine` project.
 
 ![](images/cns-ce-create-project-02.png)
 
-### Step 6: Open the `IBM Cloud Shell`
+### `IBM Cloud Shell`
+
+#### Step 1: Open the `IBM Cloud Shell`
 
 When using the IBM Cloud Shell, no client side setup is required for this workshop, it comes with all necessary CLIs (command line tools).
 
@@ -55,13 +61,15 @@ In your browser, login to the [IBM Cloud](https://cloud.ibm.com) Dashboard and o
 
 _Note:_ Your workspace includes 500 MB of temporary storage. This session will close after an hour of inactivity. If you don't have any active sessions for an hour or you reach the 50-hour weekly usage limit, your workspace data is removed.
 
-### Step 7: `IBM Cloud Shell`
+#### Step 2: `IBM Cloud Shell`
 
 Now you are logged on with your IBM Cloud account.
 
 ![](images/cns-ce-cloud-shell-02.png)
 
-### Step 8: Clone the GitHub project to the `IBM Cloud Shell
+### Deploy the example application
+
+#### Step 1: Clone the GitHub project to the `IBM Cloud Shell
 
 Insert these commands to clone the GitHub project to the `IBM Cloud Shell`
 
@@ -71,7 +79,7 @@ cd ce-cns
 ROOT_FOLDER=$(pwd)
 ```
 
-### Step 9: Now set the environment variable to later usage with your Code Engine project name
+#### Step 2: Now set the environment variable to later usage with your Code Engine project name
 
 > REMEMBER! `cloud-native-starter-[YOUR-EXTENTION]`
 
@@ -80,7 +88,7 @@ cd $ROOT_FOLDER/CE
 export MYPROJECT=cloud-native-starter-[YOUR-EXTENTION]
 ```
 
-### Step 10: Execute following bash automation
+#### Step 3: Execute following bash automation
 
 > Don't worry, this script may take several minutes.
 
@@ -107,7 +115,7 @@ export REPOSITORY=tsuedbroecker #the name of the public container repository on 
 export REGION="us-south" #the region with is used when you choose Dallas as location during the creation of the project
 ```
 
-### Step 11: Open the example application
+#### Step 4: Inspect the execution output
 
 The following shows an example execution result of the bash script execution and the last four lines do contain the routes to the applications.
 
@@ -123,7 +131,7 @@ The following shows an example execution result of the bash script execution and
 
 You can open the example application with the `Web-App` link. Copy the link and open the link in a browser.
 
-### Step 12: Open  the example application in your browser
+#### Step 5: Open  the example application in your browser
 
 Use `user: alice` and `password: alice` for the logon.
 

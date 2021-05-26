@@ -16,6 +16,7 @@ nav:
   - Labs: 
     - 1. Setup the example application: setup-example.md
     - 2. Inspect the `Code Engine` project: inspect-the-project.md 
+    - 3. Monitoring of the application: monitoring.md
 
 ## DO NOT CHANGE BELOW THIS LINE
 
