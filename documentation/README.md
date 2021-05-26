@@ -1,4 +1,4 @@
-# Workshop: Get Started with Java Microservices on Code Engine
+# Workshop: Get Started with deploying a Java Microservices Application to `Code Engine`
 
 **------------------**
 **UNDER CONSTRUCTION**
@@ -17,15 +17,26 @@ After you complete this workshop, you'll have a basic understanding of the follo
 
 ### Architecture
 
-The following diagram shows the architecture of the sample application. There is a `web-app` frontend application that serves the Javascript/Vue.js code to the browser. The `web-app` code running in the browser invokes a REST API of the `web-api` microservice. The `web-api` microservice in turn invokes a REST API of the `articles` microservice. [`Keycloak`](https://www.keycloak.org/) is used for the `Identity and Access Manegement` of the microservices based application.
+The example application simply shows articles protected with an `Identity and Access Manegement`.
+In the following you see the frontend with the artiecls and the valid user `alice` is logged on.
 
-To see the results in the web application, users need to be authenticated and they need to have the role `user`.
+![](images/cns-ce-example-application-00.png)
+
+The following diagram shows the architecture of the sample application. There is a `web-app` frontend application that serves the Javascript/Vue.js code to the browser. The `web-app` code running in the browser invokes a REST API of the `web-api` microservice. The `web-api` microservice in turn invokes a REST API of the `articles` microservice. [`Keycloak`](https://www.keycloak.org/) is used for the `Identity and Access Manegement` of that microservices based application. To see the results in the web application, users need to be authenticated and they need to have the role `user`.
 
 The image below shows the dependencies of the example:
 
 ![](images/cns-ce-architecture.png)
 
-For an easy deployment containers were prebuild and push to a [Quay container registry](https://quay.io/user/tsuedbroecker).
+* External and internal routing
+
+In our context it's useful to have a basic understanding of the needed routes for our application. Based on the functionality of the application, we need to provide to three applications access to the internet with an secure route protected with a [TLS Certificate] (https://en.wikipedia.org/wiki/Transport_Layer_Security), these are, the `web-app` as our fronted which will be loaded into the broswer, the keyloak which must be available for the authentication and configruation for the `Identity and Access Manegement` and the `web-api` microservice which provides the articles data to the fronted.
+
+The `articles` microservice doesn't need an to be invoked from external, so it's configured to provide only an route which is used by the  `web-api` microservice to get the articles from.
+
+* Basics about the deployment
+
+For an easy deployment prebuild containers were and push to a [Quay container registry](https://quay.io/user/tsuedbroecker).
 In the following table you see the **application**/container, the exposed **routes**, uses of **TLS Certificate**, the **scale to zero** configuration and the **container registry** where the prebuild container come from.
 
 | **Application** | **Route** | **TLS Certificate** | **Scale to zero** | **Container Registry** | 
