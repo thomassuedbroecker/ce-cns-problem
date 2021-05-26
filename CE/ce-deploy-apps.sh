@@ -160,7 +160,7 @@ function reconfigureKeycloak (){
 
 function deployArticles(){
 
-    ibmcloud ce application create --name articles --image "quay.io/$REPOSITORY/articles-ce:v2" \
+    ibmcloud ce application create --name articles --image "quay.io/$REPOSITORY/articles-ce:v3" \
                                    --cpu 0.25 \
                                    --memory 0.5G \
                                    --env QUARKUS_OIDC_AUTH_SERVER_URL="$KEYCLOAK_URL/auth/realms/quarkus" \
@@ -201,7 +201,7 @@ function deployWebAPI(){
     
     # Valid vCPU and memory combinations: https://cloud.ibm.com/docs/codeengine?topic=codeengine-mem-cpu-combo
     ibmcloud ce application create --name web-api \
-                                --image "quay.io/$REPOSITORY/web-api-ce:v6" \
+                                --image "quay.io/$REPOSITORY/web-api-ce:v7" \
                                 --cpu 0.5 \
                                 --memory 1G \
                                 --env QUARKUS_OIDC_AUTH_SERVER_URL="$KEYCLOAK_URL/auth/realms/quarkus" \
