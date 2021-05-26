@@ -14,14 +14,14 @@ The image below shows the dependencies of the example:
 
 ![](images/cns-ce-architecture.png)
 
-In the following table you see the container, the exposed routes, uses of TLS Certificate and the scale to zero configuration.
+In the following table you see the **application**/container, the exposed **routes**, uses of **TLS Certificate**, the **scale to zero** configuration and the **container registry** where the prebuild container come from.
 
-| Container | Route | TLS Certificate | Scale to zero configured |
-| --- | --- | --- | --- |
-| web-app | external | yes |yes |
-| keycloak | external | yes | no |
-| web-api  | external | yes | yes |
-| articles | internal | no | yes |
+| **Application** | **Route** | **TLS Certificate** | **Scale to zero** | **Container Registry** | 
+| --- | --- | --- | --- |  --- |
+| web-app | external | yes |yes | Quey |
+| keycloak | external | yes | no | Docker |
+| web-api  | external | yes | yes | Quey |
+| articles | internal | no | yes | Quey |
 
 ### Estimated time and level
 
@@ -59,9 +59,11 @@ These are the sections of this workshop, go through all of them in sequence, sta
 ### Compatibility
 
 * [Code Engine](https://cloud.ibm.com/docs/codeengine?topic=codeengine-about)
-
+    
 ### Technology Used
 
+* [Knative](https://knative.dev/)
+* [Kubernetes](https://knative.dev/)
 * [Microservices architecture](https://en.wikipedia.org/wiki/Microservices)
 * [KEYCLOAK](https://www.keycloak.org)
 * [Jakarta EE](https://jakarta.ee/)
