@@ -29,7 +29,7 @@ After you complete this workshop, you'll have a basic understanding of the follo
 
   |  Time | Level  |
   | - | - |
-  | 30 min | beginners |
+  | 1 h | beginners |
 
 ### Architecture
 
@@ -88,7 +88,8 @@ These are the sections of this workshop, go through all of them in sequence, sta
  1. [Setup the example application](./setup-example.md)
  2. [Inspect the `Code Engine` project](./inspect-the-project.md)
  3. [Monitoring of the applications](./monitoring.md)
- 3. [Logging of the applications](./logging.md)
+ 4. [Logging of the applications](./logging.md)
+ 5. [Cleanup the example application](./cleanup-example.md)
 
 ### Compatibility
 
