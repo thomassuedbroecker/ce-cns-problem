@@ -23,3 +23,7 @@ Here we use the [IBM Cloud Monitoring](https://cloud.ibm.com/docs/monitoring?top
 For more details please use the [IBM Cloud Code Engine documentation for monitoring](https://cloud.ibm.com/docs/codeengine?topic=codeengine-monitor).
 
 ![](images/cns-ce-monitoring-01.gif)
+
+---
+
+ > Congratulations, you have successfully completed this hands-on lab `Application Monitoring` section of the workshop. Awesome :star:

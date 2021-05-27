@@ -46,3 +46,7 @@ Here we find the configurations for the application.
 Here you see the routes for the `wep-api` microservice to setup the connections **internal** `articels` microservice and the external `Keycloak` application.
 
 ![](images/cns-ce-inspect-project-05.png)
+
+---
+
+ > Congratulations, you have successfully completed this hands-on lab ` Inspect the Code Engine project` section of the workshop. Awesome :star:

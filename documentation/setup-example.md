@@ -145,3 +145,7 @@ Use `user: alice` and `password: alice` for the logon.
 Just refresh the browser and you then should see following page.
 
  ![](images/cns-ce-example-application-04.png)
+
+ ---
+
+ > Congratulations, you have successfully completed this hands-on lab `Setup the example application` section of the workshop. Awesome :star:
