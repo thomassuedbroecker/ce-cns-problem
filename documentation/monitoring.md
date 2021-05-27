@@ -14,6 +14,18 @@ Here we use the [IBM Cloud Monitoring](https://cloud.ibm.com/docs/monitoring?top
 
 ![](images/cns-ce-monitoring-02.png)
 
+In case you don't have an existing instance of `IBM Cloud Monitoring` Code Engine will automatically guide you to create a  `lite plan` instance, when you select `Add monitoring`.
+
+![](images/cns-ce-monitoring-04.png)
+
+In the upcoming dialog select `Lite` and leave the defaults selected for `region` and `resource group`.
+Name for service `IBMCloudMonitoring-Code-Engine` and press `Create`.
+
+![](images/cns-ce-monitoring-05.png)
+
+Then refresh your browser with your Code Engine project. 
+Now you will notice that you can select `Actions -> Monitoring`.
+
 ### Step 3: This opens the IBM Cloud Monitoring for the `Code Engine`
 
 ![](images/cns-ce-monitoring-03.png)
