@@ -43,6 +43,10 @@ Then the you can use the `IBM Cloud Log Analysis` service.
 
 #### Step 2: Insert `"-->log:"` as a text filter
 
+```sh
+"-->log:"
+```
+
 ![](images/cns-ce-logging-03.png)
 
 #### Step 3: Invoke the frontend application several times
