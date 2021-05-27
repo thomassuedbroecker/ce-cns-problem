@@ -27,9 +27,9 @@ cd ce-cns
 ROOT_FOLDER=$(pwd)
 ```
 
-#### Step 4: Now set the environment variable to later usage with your Code Engine project name
+#### Step 4: Now set the environment variable for later usage
 
-> REMEMBER! `cloud-native-starter-[YOUR-EXTENTION]`
+> REMEMBER! Code Engine project name `cloud-native-starter-[YOUR-EXTENTION]`
 
 ```sh
 cd $ROOT_FOLDER/CE
