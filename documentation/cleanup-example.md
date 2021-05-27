@@ -44,8 +44,6 @@ export MYPROJECT=cloud-native-starter-[YOUR-EXTENTION]
 
 #### Step 3: Execute following bash automation
 
-> Don't worry, this script may take several minutes.
-
 ```sh
 bash ce-delete-apps.sh
 ```
