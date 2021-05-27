@@ -20,6 +20,6 @@ Here we use the [IBM Cloud Monitoring](https://cloud.ibm.com/docs/monitoring?top
 
 ### Step 4: Inspect the monitoring posibilities
 
-For more details please use the [IBM Cloud Code Engine documentation](https://cloud.ibm.com/docs/codeengine?topic=codeengine-monitor).
+For more details please use the [IBM Cloud Code Engine documentation for monitoring](https://cloud.ibm.com/docs/codeengine?topic=codeengine-monitor).
 
 ![](images/cns-ce-monitoring-01.gif)
