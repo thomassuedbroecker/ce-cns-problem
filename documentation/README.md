@@ -6,6 +6,8 @@
 
 ### Objectives
 
+The workshop addresses the topic containerized applications on` IBM Cloud Code Engine`.
+
 After you complete this workshop, you'll have a basic understanding of the following:
 
   * Deploy an existing Java microservices `containerized` application example to `Code Engine`
