@@ -26,7 +26,7 @@ Name for service `IBMCloudLogging-Code-Engine` and press `Create`.
 ![](images/cns-ce-logging-05.png)
 
 Then refresh your browser with your Code Engine project. 
-When the `IBM Cloud Log Analysis` is ready and select `Actions -> Logging` again, following dialog will appear.
+When the `IBM Cloud Log Analysis` is ready and you select `Actions -> Add logging` again, following dialog will appear.
 In this dialog you select your just created `IBM Cloud Log Analysis` service instance with the name `IBMCloudLogging-Code-Engine`.
 
 ![](images/cns-ce-logging-06.png)
