@@ -70,7 +70,7 @@ Now you are logged on with your IBM Cloud account.
 
 ### Deploy the example application
 
-#### Step 1: Clone the GitHub project to the `IBM Cloud Shell
+#### Step 1: Clone the GitHub project to the `IBM Cloud Shell`
 
 Insert these commands to clone the GitHub project to the `IBM Cloud Shell`
 
