@@ -13,13 +13,15 @@ docs_dir: documentation
 nav:
   - Introduction:
      - Workshop overview: README.md
+  
   - Labs: 
     - 1. Setup the example application: setup-example.md
     - 2. Inspect the `Code Engine` project: inspect-the-project.md 
     - 3. Monitoring of the applications: monitoring.md
     - 4. Logging of the applications: logging.md
     - 5. Cleanup the example application: cleanup-example.md
-   - Additional Resources:
+  
+  - Additional Resources:
     - Cloud-Native-Starter project: https://github.com/IBM/cloud-native-starter
     - Cloud-Native-Starter project security: https://github.com/IBM/cloud-native-starter/security
     - Keycloak core concepts of open-source identity and access management: https://developers.redhat.com/blog/2019/12/11/keycloak-core-concepts-of-open-source-identity-and-access-management/
