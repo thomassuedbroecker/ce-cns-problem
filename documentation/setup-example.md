@@ -12,10 +12,10 @@ Open this [link]() and follow the guided steps.
 
 * Expected costs for the workshop
 
-`Code Engine` has a `free tier` per month and we expect, if you haven't used that `free tier` in current month, you can execute the workshop without creating any additional costs. For the monitoring and logging we will use free `lite plans` for the service instances [IBM Cloud Monitoring](https://cloud.ibm.com/docs/monitoring?topic=monitoring-getting-started#getting-started) and 
+`Code Engine` has a `free tier` per month and we expect, if you haven't used that `free tier` in current month, you can execute the workshop without creating any additional costs. For the monitoring and logging we will use free `lite plans` for the service instances of [IBM Cloud Monitoring](https://cloud.ibm.com/docs/monitoring?topic=monitoring-getting-started#getting-started) and 
  [IBM Cloud Log Analysis](https://cloud.ibm.com/docs/log-analysis?topic=log-analysis-getting-started#getting-started).
 
-Here you can find the [`Code Engine` actual pricing](https://www.ibm.com/cloud/code-engine/pricing).
+Here you find the actual [`Code Engine` pricing](https://www.ibm.com/cloud/code-engine/pricing).
 The image blow shows a screen shot from `26. May 2021` of the `free tier`.
 
 ![](images/cns-ce-pricing-20210526.png)
@@ -72,7 +72,7 @@ Now you are logged on with your IBM Cloud account.
 
 #### Step 1: Clone the GitHub project to the `IBM Cloud Shell`
 
-Insert these commands to clone the GitHub project to the `IBM Cloud Shell`
+Insert these commands to clone the GitHub project to the `IBM Cloud Shell`.
 
 ```sh
 git clone https://github.com/thomassuedbroecker/ce-cns.git
@@ -82,7 +82,7 @@ ROOT_FOLDER=$(pwd)
 
 #### Step 2: Now set the environment variable for later usage
 
-> REMEMBER! Code Engine project name `cloud-native-starter-[YOUR-EXTENTION]`
+> REMEMBER! Your Code Engine project name `cloud-native-starter-[YOUR-EXTENTION]`
 
 ```sh
 cd $ROOT_FOLDER/CE
@@ -104,7 +104,7 @@ For a better understanding here are the simplified steps that are carried out in
 3. Deploy `Keycloak` simply as a container (that's the reason why not scale to zero (stateful)) 
 4. Configure the `Keycloak` realm json file based on the web-app url and create realm.
 5. Deploy `articles` microservice is defined as `local cluster` here, we need to know the `namespace`. ([details are related to Knative](https://github.com/knative/serving/issues/7450))
-6. Deploy `web-api` with needed `Keycloak` and articles urls as environment variables.
+6. Deploy `web-api` with the needed `Keycloak` and articles urls as environment variables.
 7. Reconfigure `web-app` with the needed `Keycloak` and web-api urls as environment variables.
 
 For the executon to the bash script are following variables relevant:
@@ -127,7 +127,7 @@ The following shows an example execution result of the bash script and the last 
  - Keycloak : https://keycloak.9xztp8web0h.us-south.codeengine.appdomain.cloud/auth/admin/master/console/#/realms/quarkus
  - Web-API  : https://web-api.9xztp8web0h.us-south.codeengine.appdomain.cloud
  - Articles : http://articles.9xztp8web0h.svc.cluster.local/articles
- - Web-App  : https://web-api.9xztp8web0h.us-south.codeengine.appdomain.cloud
+ - Web-App  : https://web-app.9xztp8web0h.us-south.codeengine.appdomain.cloud
 ```
 
 You can open the example application with the `Web-App` link. Copy the link and open the link in a browser.
@@ -142,7 +142,7 @@ Use `user: alice` and `password: alice` for the logon.
  
 ![](images/cns-ce-example-application-03.png)
  
-Just refresh the browser and you then should see following page.
+Just refresh the browser and then you should see following page.
 
  ![](images/cns-ce-example-application-04.png)
 

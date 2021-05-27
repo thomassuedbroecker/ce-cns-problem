@@ -31,7 +31,7 @@ In this dialog you select your just created `IBM Cloud Log Analysis` service ins
 
 ![](images/cns-ce-logging-06.png)
 
-Then the you can use the `IBM Cloud Log Analysis` service.
+Then you use the `IBM Cloud Log Analysis` service.
 
 #### Step 3: This opens the IBM Cloud Log Analysis
 

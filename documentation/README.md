@@ -6,7 +6,7 @@
 
 ### Objectives
 
-The workshop addresses the topic containerized applications on` IBM Cloud Code Engine`.
+The workshop addresses the topic containerized applications on `IBM Cloud Code Engine`.
 
 After you complete this workshop, you'll have a basic understanding of the following:
 
@@ -22,7 +22,7 @@ After you complete this workshop, you'll have a basic understanding of the follo
 
 * In order to run this workshop, you will need to create an IBM Cloud `PayAsYouGo` account (or log in to your existing account).
 
-  > `Code Engine` has a `free tier` per month and we expect, if you haven't used that `free tier` in current month, you can execute the workshop without creating any additional costs. For the monitoring and logging we will use free lite plans for the service instances [IBM Cloud Monitoring](https://cloud.ibm.com/docs/monitoring?topic=monitoring-getting-started#getting-started) and 
+  > `Code Engine` has a `free tier` per month, and we expect, if you haven't used that `free tier` in current month, you can execute the workshop without creating any additional costs. For the monitoring and logging we will use free lite plans for the service instances [IBM Cloud Monitoring](https://cloud.ibm.com/docs/monitoring?topic=monitoring-getting-started#getting-started) and 
  [IBM Cloud Log Analysis](https://cloud.ibm.com/docs/log-analysis?topic=log-analysis-getting-started#getting-started).
 
 * You should have a basic understanding of containerized applications
@@ -42,7 +42,7 @@ In the following picture you see the frontend with the articles and the valid us
 
 ![](images/cns-ce-example-application-00.png)
 
-The following diagram shows the architecture of the sample application. There is a `web-app` frontend application that serves the Javascript/Vue.js code to the browser. The `web-app` code running in the browser invokes a REST API of the `web-api` microservice. The `web-api` microservice in turn invokes a REST API of the `articles` microservice. [`Keycloak`](https://www.keycloak.org/) is used for the `Identity and Access Manegement` of that microservices based application. To see the results in the web application, users need to be authenticated and they need to have the role `user`.
+The following diagram shows the architecture of the example application. There is a `web-app` frontend application that serves the Javascript/Vue.js code to the browser. The `web-app` code running in the browser invokes a REST API of the `web-api` microservice. The `web-api` microservice in turn invokes a REST API of the `articles` microservice. [`Keycloak`](https://www.keycloak.org/) is used for the `Identity and Access Manegement` of that microservices based application. To see the results in the web application, users need to be authenticated and they need to have the role `user`.
 
 The image below shows the dependencies of the example:
 
@@ -52,14 +52,14 @@ The image below shows the dependencies of the example:
 
 In our context it's useful to have a basic understanding of the routing for example application. Based on the functionality of the application, we need `three external routes` for the example application.
 
-Each external route communication will be automaticly secured with a [TLS Encryption](https://en.wikipedia.org/wiki/Transport_Layer_Security)created by `Code Engine` using [Let's encrypt](https://letsencrypt.org/). The three applications are the `web-app`, which will be loaded into the browser, the `Keycloak` that must be available for the authentication/authorization to our application and for potential configruation the `Identity and Access Manegement` and finally the `web-api` microservice, which provides the articles data and will be invoked be the `web-app`.
+Each external route communication will be automaticly secured with a [TLS Encryption](https://en.wikipedia.org/wiki/Transport_Layer_Security) created by `Code Engine` using [Let's encrypt](https://letsencrypt.org/). The three applications are the `web-app` which will be loaded into the browser, the `Keycloak` that must be available for the authentication/authorization to our application and for potential configruation the `Identity and Access Manegement` and finally the `web-api` microservice which provides the articles data and will be invoked be the `web-app`.
 
-The `articles` microservice doesn't need an to be invoked from external, so it's configured to provide only an `internal route`, which is used by the  `web-api` microservice to get the articles from.
+The `articles` microservice doesn't need to be invoked from external, so it's configured to provide only an `internal route`, which is used by the  `web-api` microservice to get the articles from.
 
 * Basics about the deployment
 
 For an easy deployment prebuild containers were created and pushed to a [Quay container registry](https://quay.io/user/tsuedbroecker).
-In the following table you see the **application**/container, the exposed **routes**, uses of **TLS Encryption**, the **scale to zero** configuration, the **container registry** where the prebuild container come from, the configuration for **vCPU** and **Memory in GB** and the **min/max Instances** for the applications.
+In the following table you see the **application**/container, the exposed **routes**, uses of **TLS Encryption**, the **scale to zero** configuration, the **container registry** where the prebuild container comes from, the configuration for **vCPU** and **Memory in GB** and the **min/max Instances** for the applications.
 
 | **Application** | **Route** | **TLS Encryption** | **Scale to zero** | **Container Registry** | **vCPU** | **Memory** | **min Instances** | **max Instances** |
 | --- | --- | --- | --- |  --- | --- |  --- | --- | --- |
@@ -70,7 +70,7 @@ In the following table you see the **application**/container, the exposed **rout
 
 The `Keycloak` application for the `Identity and Access Manegement` isn't configured to `scale to zero`, because the application is `stateful` and contains the realm configuration, which will be delete, if you would restart the application.
 
-_Note:_ The project also contains the source code, you can use to customize to your an own version of the microservices based example application.
+_Note:_ The project also contains the source code, that you can use to customize to your an own version of the microservices based example application.
 
 
 ### About this workshop
