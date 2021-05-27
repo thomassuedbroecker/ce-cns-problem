@@ -49,4 +49,4 @@ Here you see the routes for the `wep-api` microservice to setup the connections 
 
 ---
 
- > Congratulations, you have successfully completed this hands-on lab ` Inspect the Code Engine project` section of the workshop. Awesome :star:
+ > Congratulations, you have successfully completed this hands-on lab ` Inspect the Code Engine project` of the workshop. Awesome :star:

@@ -39,4 +39,4 @@ For more details please use the [IBM Cloud Code Engine documentation for logging
 
 ---
 
-> Congratulations, you have successfully completed this hands-on lab ` Inspect the Code Engine project` section of the workshop. Awesome :star:
+> Congratulations, you have successfully completed this hands-on lab ` Inspect the Code Engine project` of the workshop. Awesome :star:

@@ -73,3 +73,4 @@ Here are your remaing applications in your project
 ---
 
  > Congratulations, you have successfully completed this hands-on workshop. Awesome you did it :star:
+ :star: :star:
