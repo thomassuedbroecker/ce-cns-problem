@@ -19,7 +19,7 @@ In case you don't have an existing instance of `IBM Cloud Monitoring` Code Engin
 ![](images/cns-ce-monitoring-04.png)
 
 In the upcoming dialog select `Lite` and leave the defaults selected for `region` and `resource group`.
-Name for service `IBMCloudMonitoring-Code-Engine` and press `Create`.
+Name the service instance `IBMCloudMonitoring-Code-Engine` and press `Create`.
 
 ![](images/cns-ce-monitoring-05.png)
 

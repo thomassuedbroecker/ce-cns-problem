@@ -21,7 +21,7 @@ In case you don't have an existing instance of `IBM Cloud Log Analysis` Code Eng
 ![](images/cns-ce-logging-04.png)
 
 In the upcoming dialog select `Lite` and leave the defaults selected for `region` and `resource group`.
-Name for service `IBMCloudLogging-Code-Engine` and press `Create`.
+Name the service instance `IBMCloudLogging-Code-Engine` and press `Create`.
 
 ![](images/cns-ce-logging-05.png)
 
