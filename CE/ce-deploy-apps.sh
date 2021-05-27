@@ -289,7 +289,7 @@ function deployWebApp(){
 
     ibmcloud ce application get --name web-app
     WEBAPP_URL=$(ibmcloud ce application get --name web-app | grep "https://web-app." |  awk '/web-app/ {print $2}')
-    echo "Set WEBAPI URL: $WEBAPP_URL"
+    echo "Set WEBAPP URL: $WEBAPP_URL"
 
     array=("web-app")
     for i in "${array[@]}"
