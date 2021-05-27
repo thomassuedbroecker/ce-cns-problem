@@ -55,6 +55,10 @@ function deleteWebApp(){
 
 function kubeDeploymentVerification(){
 
+    echo "************************************"
+    echo " pods, deployments and configmaps details "
+    echo "************************************"
+    
     kubectl get pods -n $NAMESPACE
     kubectl get deployments -n $NAMESPACE
     kubectl get configmaps -n $NAMESPACE
@@ -93,7 +97,6 @@ echo " web-api"
 echo "************************************"
 
 deleteWebAPI
-ibmcloud ce application events --application web-api
 
 echo "************************************"
 echo " Verify deployments"

@@ -352,6 +352,10 @@ function updateWebApp(){
 
 function kubeDeploymentVerification(){
 
+    echo "************************************"
+    echo " pods, deployments and configmaps details "
+    echo "************************************"
+    
     kubectl get pods -n $NAMESPACE
     kubectl get deployments -n $NAMESPACE
     kubectl get configmaps -n $NAMESPACE

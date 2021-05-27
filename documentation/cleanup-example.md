@@ -65,9 +65,10 @@ The following shows an example execution result of the bash script execution.
 
 ```sh
 ************************************
-Here are your remaing applications in your project 
+ Here are your remaing applications in your project cloud-native-starter-tsuedbro
 ************************************
-
+Listing all applications...
+OK
 ```
 
 ---
