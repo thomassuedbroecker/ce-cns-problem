@@ -99,21 +99,21 @@ bash ce-deploy-apps.sh
 
 For a better understanding here are the simplified steps that are carried out in the script using the IBM Cloud `Code Engine CLI` and `kubectl CLI`:
 
-1. Prepare the [Code Engine CLI](https://cloud.ibm.com/docs/codeengine?topic=codeengine-cli) for later usage and get the **namespace** for later usage, with [`kubectl`](https://kubernetes.io/docs/reference/kubectl/overview/).
+1. Connect to the `Code Engine project` with the  [Code Engine CLI](https://cloud.ibm.com/docs/codeengine?topic=codeengine-cli) and get the **namespace** for later usage to define the internal route, with [`kubectl`](https://kubernetes.io/docs/reference/kubectl/overview/).
 2. Deploy `web-app` to get needed route for the redirect of Keycloak 
 3. Deploy `Keycloak` simply as a container (that's the reason why not scale to zero (stateful)) 
 4. Configure the `Keycloak` realm json file based on the web-app url and create realm.
-5. Deploy `articles` microservice is defined as `local cluster` here we need to use the `namespace`.
+5. Deploy `articles` microservice is defined as `local cluster` here, we need to know the `namespace`. ([details are related to Knative](https://github.com/knative/serving/issues/7450))
 6. Deploy `web-api` with needed `Keycloak` and articles urls as environment variables.
 7. Reconfigure `web-app` with the needed `Keycloak` and web-api urls as environment variables.
 
-Relevant for your configuration are following variables in the bash script:
+For the executon to the bash script are following variables relevant:
 
 ```sh
 export PROJECT_NAME=$MYPROJECT #your project name
-export RESOURCE_GROUP=default #the resource group you defined during the creation of the project
+export RESOURCE_GROUP=default #the resource group in IBM Cloud you defined during the creation of the project
 export REPOSITORY=tsuedbroecker #the name of the public container repository on Quay
-export REGION="us-south" #the region with is used when you choose Dallas as location during the creation of the project
+export REGION="us-south" #the region in IBM Cloud that is used. When you choose Dallas as location during the creation of the project the region is "us-south"
 ```
 
 #### Step 4: Inspect the execution output
