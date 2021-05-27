@@ -93,11 +93,13 @@ These are the sections of this workshop, go through all of them in sequence, sta
 
 ### Compatibility
 
+The workshop uses following IBM Cloud Services:
+
  * [IBM Cloud Code Engine](https://cloud.ibm.com/docs/codeengine?topic=codeengine-about)
  * [IBM Cloud Monitoring](https://cloud.ibm.com/docs/monitoring?topic=monitoring-getting-started#getting-started) (lite plan)
  * [IBM Cloud Log Analysis](https://cloud.ibm.com/docs/log-analysis?topic=log-analysis-getting-started#getting-started) (lite plan)
 
-`Code Engine` is build on [Open Source](https://en.wikipedia.org/wiki/Open_source) technologies:
+`IBM Cloud Code Engine` is build on [Open Source](https://en.wikipedia.org/wiki/Open_source) technologies:
 
   * [Knative](https://knative.dev/)
   * [Kubernetes](https://knative.dev/)
@@ -105,6 +107,8 @@ These are the sections of this workshop, go through all of them in sequence, sta
   * [Tekton](https://tekton.dev/)
         
 ### Technology Used
+
+The example mircorservices application example is build with following `technologies/tools/frameworks`.
 
   * [Microservices architecture](https://en.wikipedia.org/wiki/Microservices)
   * [KEYCLOAK](https://www.keycloak.org)
