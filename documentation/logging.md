@@ -16,6 +16,23 @@ Here we use the [IBM Cloud Log Analysis](https://cloud.ibm.com/docs/log-analysis
 
 ![](images/cns-ce-logging-01.png)
 
+In case you don't have an existing instance of `IBM Cloud Log Analysis` Code Engine will automatically guide you to create a  `lite plan` instance, when you select `Actions -> Add logging`.
+
+![](images/cns-ce-logging-04.png)
+
+In the upcoming dialog select `Lite` and leave the defaults selected for `region` and `resource group`.
+Name for service `IBMCloudLogging-Code-Engine` and press `Create`.
+
+![](images/cns-ce-logging-05.png)
+
+Then refresh your browser with your Code Engine project. 
+When the `IBM Cloud Log Analysis` is ready and select `Actions -> Logging` again, following dialog will appear.
+In this dialog you select your just created `IBM Cloud Log Analysis` service instance with the name `IBMCloudLogging-Code-Engine`.
+
+![](images/cns-ce-logging-06.png)
+
+Then the you can use the `IBM Cloud Log Analysis` service.
+
 #### Step 3: This opens the IBM Cloud Log Analysis
 
 ### Configure a filter
