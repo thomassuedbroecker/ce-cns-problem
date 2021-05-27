@@ -118,7 +118,7 @@ export REGION="us-south" #the region in IBM Cloud that is used. When you choose 
 
 #### Step 4: Inspect the execution output
 
-The following shows an example execution result of the bash script execution and the last four lines do contain the routes to the applications.
+The following shows an example execution result of the bash script and the last four lines do contain the routes to the applications.
 
 ```sh
 ************************************
