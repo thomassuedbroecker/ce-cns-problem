@@ -16,14 +16,14 @@ Use following link to directly navigate to the Code Engine projects and open the
 
 In the following image you see:
 
-1. The summary containing the Applications, Jobs, Image builds, Registry access, Secrets and Configmaps.In our case only the four applications are relevant.
+1. The summary containing the Applications, Jobs, Image builds, Registry access, Secrets and Configmaps. In our case only the four applications are relevant.
 2. The currenly usage of our application.
 
 ![](images/cns-ce-inspect-project-01.png)
 
 ### Step 3: Select `Applications`
 
-Here you find an overview of the currenly running applications. ( FYI `Code Engine` definition: `A program that serves HTTP requests`)
+Here you find an overview of the currenly running applications. ( FYI The `Code Engine` definition for an application: `A program that serves HTTP requests`)
 
 ![](images/cns-ce-inspect-project-02.png)
 
@@ -47,7 +47,7 @@ Here you see the routes for the `wep-api` microservice to setup the connections 
 
 ![](images/cns-ce-inspect-project-05.png)
 
-_Note:_ In following code you see the `Code Engine CLI` invocation for the `web-api` microservice, that is used in the bash script. It  reflects what you see in the Code Engine UI.
+_Note:_ In following code you see the `Code Engine CLI` invocation for the `web-api` microservice, that is used in the bash script. It reflects what you see in the Code Engine UI.
 
 ```sh
 # Valid vCPU and memory combinations: https://cloud.ibm.com/docs/codeengine?topic=codeengine-mem-cpu-combo
