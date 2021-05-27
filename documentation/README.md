@@ -8,8 +8,9 @@
 
 After you complete this workshop, you'll have a basic understanding of the following:
 
-  * Deploying an existing example microservices based application to `Code Engine`
+  * Deploy an existing Java microservices container based application example to `Code Engine`
       * See the usage of the `IBM Cloud Code Engine CLI` and `kubectl` in the bash script automation
+  * Understand internal and external `HTTP/HTTPS routing` between the microservices
   * Use the `Out-Of-The-Box` monitoring for the example application
   * Use the `Out-Of-The-Box` logging for the example application
 
