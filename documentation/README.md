@@ -4,8 +4,6 @@
 **UNDER CONSTRUCTION**
 **------------------**
 
-> This project is related to the [Cloud Native Starter](https://github.com/ibm/cloud-native-starter) project. In the workshop we use a costomized version of the [security application example](https://github.com/IBM/cloud-native-starter/blob/master/security/README.md). 
-
 ### Objectives
 
 After you complete this workshop, you'll have a basic understanding of the following:
@@ -17,7 +15,22 @@ After you complete this workshop, you'll have a basic understanding of the follo
 
 > _The scope of this workshop is not to explain every aspect of application running a application with `Code Engine`._
 
+### Prerequisites
+
+In order to run this workshop, you will need to create an IBM Cloud `PayAsYouGo` account (or log in to your existing account).
+
+`Code Engine` has a `free tier` per month and we expect, if you haven't used that `free tier` in current month, you can execute the workshop without creating any additional costs. For the monitoring and logging we will use free lite plans for the service instances [IBM Cloud Monitoring](https://cloud.ibm.com/docs/monitoring?topic=monitoring-getting-started#getting-started) and 
+ [IBM Cloud Log Analysis](https://cloud.ibm.com/docs/log-analysis?topic=log-analysis-getting-started#getting-started).
+
+### Estimated time and level
+
+  |  Time | Level  |
+  | - | - |
+  | 30 min | beginners |
+
 ### Architecture
+
+> This `workshop` is related to the [Cloud Native Starter](https://github.com/ibm/cloud-native-starter) project. In the workshop we use a costomized version of the [security application example](https://developer.ibm.com/languages/java/tutorials/secure-your-java-microservices-application-workshop/). 
 
 The example application simply shows articles protected with an `Identity and Access Manegement`.
 In the following picture you see the frontend with the articles and the valid user `alice` is logged on.
@@ -52,11 +65,6 @@ In the following table you see the **application**/container, the exposed **rout
 
 _Note:_ The project also contains the source code, you can use to customize it to your an own version of the microservices based example application.
 
-### Estimated time and level
-
-  |  Time | Level  |
-  | - | - |
-  | 30 min | beginners |
 
 ### About this workshop
 

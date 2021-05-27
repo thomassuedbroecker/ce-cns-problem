@@ -10,12 +10,12 @@
 
 Open this [link]() and follow the guided steps.
 
-* Expected costs for the workshop
+* Espected costs for the workshop
+
+`Code Engine` has a `free tier` per month and we expect, if you haven't used that `free tier` in current month, you can execute the workshop without creating any additional costs. For the monitoring and logging we will use free `lite plans` for the service instances [IBM Cloud Monitoring](https://cloud.ibm.com/docs/monitoring?topic=monitoring-getting-started#getting-started) and 
+ [IBM Cloud Log Analysis](https://cloud.ibm.com/docs/log-analysis?topic=log-analysis-getting-started#getting-started).
 
 Here you can find the [`Code Engine` actual pricing](https://www.ibm.com/cloud/code-engine/pricing).
-`Code Engine` has a `free tier` per month and we expect, if you haven't used that `free tier` in month you can execute the workshop without creating any additional costs. For the monitoring and logging we will use free lite plans for the service instances ([IBM Cloud Monitoring](https://cloud.ibm.com/docs/monitoring?topic=monitoring-getting-started#getting-started) and 
- [IBM Cloud Log Analysis](https://cloud.ibm.com/docs/log-analysis?topic=log-analysis-getting-started#getting-started)).
-
 The image blow shows a screen shot from `26. May 2021` of the `free tier`.
 
 ![](images/cns-ce-pricing-20210526.png)
