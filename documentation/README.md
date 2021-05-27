@@ -14,7 +14,7 @@ After you complete this workshop, you'll have a basic understanding of the follo
   * Use the `Out-Of-The-Box` monitoring for the example application
   * Use the `Out-Of-The-Box` logging for the example application
 
-> _The scope of this workshop is not to explain every aspect of application running a application with `Code Engine`._
+> _The scope of this workshop is not to explain every aspect of running an application or job on `Code Engine`. It's just about containerized applications._
 
 ### Prerequisites
 
