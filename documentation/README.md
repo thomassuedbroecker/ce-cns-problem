@@ -8,7 +8,7 @@
 
 After you complete this workshop, you'll have a basic understanding of the following:
 
-  * Deploy an existing Java microservices container based application example to `Code Engine`
+  * Deploy an existing Java microservices containerized application example to `Code Engine`
       * See the usage of the `IBM Cloud Code Engine CLI` and `kubectl` in the bash script automation
   * Understand internal and external `HTTP/HTTPS routing` between the microservices
   * Use the `Out-Of-The-Box` monitoring for the example application
@@ -18,10 +18,12 @@ After you complete this workshop, you'll have a basic understanding of the follo
 
 ### Prerequisites
 
-In order to run this workshop, you will need to create an IBM Cloud `PayAsYouGo` account (or log in to your existing account).
+* In order to run this workshop, you will need to create an IBM Cloud `PayAsYouGo` account (or log in to your existing account).
 
-`Code Engine` has a `free tier` per month and we expect, if you haven't used that `free tier` in current month, you can execute the workshop without creating any additional costs. For the monitoring and logging we will use free lite plans for the service instances [IBM Cloud Monitoring](https://cloud.ibm.com/docs/monitoring?topic=monitoring-getting-started#getting-started) and 
+  > `Code Engine` has a `free tier` per month and we expect, if you haven't used that `free tier` in current month, you can execute the workshop without creating any additional costs. For the monitoring and logging we will use free lite plans for the service instances [IBM Cloud Monitoring](https://cloud.ibm.com/docs/monitoring?topic=monitoring-getting-started#getting-started) and 
  [IBM Cloud Log Analysis](https://cloud.ibm.com/docs/log-analysis?topic=log-analysis-getting-started#getting-started).
+
+* You should have a basic understanding of containerized applications
 
 ### Estimated time and level
 
