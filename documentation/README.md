@@ -57,18 +57,18 @@ The `articles` microservice doesn't need an to be invoked from external, so it's
 * Basics about the deployment
 
 For an easy deployment prebuild containers were created and pushed to a [Quay container registry](https://quay.io/user/tsuedbroecker).
-In the following table you see the **application**/container, the exposed **routes**, uses of **TLS Certificate**, the **scale to zero** configuration, the **container registry** where the prebuild container come from, the configuration for **vCPU** and **Memory in GB** and the **min/max Instances** for the applications.
+In the following table you see the **application**/container, the exposed **routes**, uses of **TLS Encryption**, the **scale to zero** configuration, the **container registry** where the prebuild container come from, the configuration for **vCPU** and **Memory in GB** and the **min/max Instances** for the applications.
 
-| **Application** | **Route** | **TLS Certificate** | **Scale to zero** | **Container Registry** | **vCPU** | **Memory** | **min Instances** | **max Instances** |
+| **Application** | **Route** | **TLS Encryption** | **Scale to zero** | **Container Registry** | **vCPU** | **Memory** | **min Instances** | **max Instances** |
 | --- | --- | --- | --- |  --- | --- |  --- | --- | --- |
 | web-app | external | yes |yes | Quey | 0.5 | 1 GB | 0 | 1 |
 | **keycloak** | external | yes | **no** | Docker | 0.5 | 1 GB | 1 | 1 |
 | web-api  | external | yes | yes | Quey | 0.5 | 1 GB | 0 | 1 |
-| **articles** | **internal** | no | yes | Quey | 0.25 | 0.5G GB | 0 | 1 |
+| **articles** | **internal** | no (mTLS comming sone) | yes | Quey | 0.25 | 0.5G GB | 0 | 1 |
 
 The `Keycloak` application for the `Identity and Access Manegement` isn't configured to `scale to zero`, because the application is `stateful` and contains the realm configuration, which will be delete, if you would restart the application.
 
-_Note:_ The project also contains the source code, you can use to customize it to your an own version of the microservices based example application.
+_Note:_ The project also contains the source code, you can use to customize to your an own version of the microservices based example application.
 
 
 ### About this workshop
@@ -111,7 +111,7 @@ The workshop uses following IBM Cloud Services:
 The example mircorservices application example is build with following `technologies/tools/frameworks`.
 
   * [Microservices architecture](https://en.wikipedia.org/wiki/Microservices)
-  * [KEYCLOAK](https://www.keycloak.org)
+  * [Keycloak](https://www.keycloak.org)
   * [Jakarta EE](https://jakarta.ee/)
   * [MicroProfile](https://microprofile.io/)
   * [Quarkus](https://quarkus.io/ingress)
