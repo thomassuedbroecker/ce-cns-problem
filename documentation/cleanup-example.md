@@ -59,7 +59,7 @@ export REGION="us-south" #the region with is used when you choose Dallas as loca
 
 #### Step 4: Inspect the execution output
 
-The following shows an example execution result of the bash script execution.
+The following shows an example execution result of the bash script.
 
 ```sh
 ************************************
