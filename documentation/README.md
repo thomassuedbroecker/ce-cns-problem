@@ -62,9 +62,11 @@ In the following table you see the **application**/container, the exposed **rout
 | **Application** | **Route** | **TLS Certificate** | **Scale to zero** | **Container Registry** | **vCPU** | **Memory** | **min Instances** | **max Instances** |
 | --- | --- | --- | --- |  --- | --- |  --- | --- | --- |
 | web-app | external | yes |yes | Quey | 0.5 | 1 GB | 0 | 1 |
-| keycloak | external | yes | no | Docker | 0.5 | 1 GB | 1 | 1 |
+| **keycloak** | external | yes | **no** | Docker | 0.5 | 1 GB | 1 | 1 |
 | web-api  | external | yes | yes | Quey | 0.5 | 1 GB | 0 | 1 |
-| articles | internal | no | yes | Quey | 0.25 | 0.5G GB | 0 | 1 |
+| **articles** | **internal** | no | yes | Quey | 0.25 | 0.5G GB | 0 | 1 |
+
+Keycloak application for the `Identity and Access Manegement` isn't configured to `scale to zero`, because the application is `stateful` and contains the realm configuration, which will be delete, if you would restart the application.
 
 _Note:_ The project also contains the source code, you can use to customize it to your an own version of the microservices based example application.
 
