@@ -47,6 +47,21 @@ Here you see the routes for the `wep-api` microservice to setup the connections 
 
 ![](images/cns-ce-inspect-project-05.png)
 
+_Note:_ In following code you see the `Code Engine CLI` invocation for the `web-api` microservice, that is used in the bash script. It  reflects what you see in the Code Engine UI.
+
+```sh
+# Valid vCPU and memory combinations: https://cloud.ibm.com/docs/codeengine?topic=codeengine-mem-cpu-combo
+    ibmcloud ce application create --name web-api \
+                                --image "quay.io/$REPOSITORY/web-api-ce:v7" \
+                                --cpu "0.5" \
+                                --memory "1G" \
+                                --env QUARKUS_OIDC_AUTH_SERVER_URL="$KEYCLOAK_URL/auth/realms/quarkus" \
+                                --env CNS_ARTICLES_URL="http://articles.$NAMESPACE.svc.cluster.local/articles" \
+                                --max-scale 1 \
+                                --min-scale 0 \
+                                --port 8081
+```
+
 ---
 
  > Congratulations, you have successfully completed this hands-on lab ` Inspect the Code Engine project` of the workshop. Awesome :star:
