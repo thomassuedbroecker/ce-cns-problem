@@ -23,9 +23,10 @@ Now you are logged on with your IBM Cloud account.
 
 ![](images/cns-ce-cloud-shell-02.png)
 
-#### Step 3: Clone the GitHub project to the `IBM Cloud Shell` 
+#### Step 3: (Optional) Clone the GitHub project to the `IBM Cloud Shell` 
 
-In case your `IBM Cloud Shell` session has expired repeat, run following commands.
+In case your `IBM Cloud Shell` **session has expired** it cloud be that the cloned project was deleted.
+Then you need to clone the project again, because we will use a bash script for the deletion of the project.
 
 ```sh
 git clone https://github.com/thomassuedbroecker/ce-cns.git
