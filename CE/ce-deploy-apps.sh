@@ -65,7 +65,8 @@ function setupCLIenvCE() {
   #to use the kubectl commands
   ibmcloud ce project select -n $PROJECT_NAME --kubecfg 
   
-  NAMESPACE=$(kubectl get namespaces | awk '/NAME/ { getline; print $0;}' | awk '{print $1;}')
+  # NAMESPACE=$(kubectl get namespaces | awk '/NAME/ { getline; print $0;}' | awk '{print $1;}')
+  NAMESPACE=$(ibmcloud ce project get --name $MYPROJECT --output json | sed -n 's|.*"namespace":"\([^"]*\)".*|\1|p')
   echo "Namespace: $NAMESPACE"
   kubectl get pods -n $NAMESPACE
 
@@ -290,7 +291,7 @@ function deployWebApp(){
     ibmcloud ce application get --name web-app
     WEBAPP_URL=$(ibmcloud ce application get --name web-app | grep "https://web-app." |  awk '/web-app/ {print $2}')
     echo "Set WEBAPP URL: $WEBAPP_URL"
-    
+
     array=("web-app")
     for i in "${array[@]}"
     do 

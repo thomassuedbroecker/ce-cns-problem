@@ -97,12 +97,12 @@ cd $ROOT_FOLDER/CE
 bash ce-deploy-apps.sh
 ```
 
-For a better understanding here are the simplified steps that are carried out in the script using the IBM Cloud `Code Engine CLI` and `kubectl CLI`:
+For a better understanding here are the simplified steps that are carried out in the script using the IBM Cloud `Code Engine CLI`:
 
-1. Connect to the `Code Engine project` with the  [Code Engine CLI](https://cloud.ibm.com/docs/codeengine?topic=codeengine-cli) and get the **namespace** for later usage to define the internal route, with [`kubectl`](https://kubernetes.io/docs/reference/kubectl/overview/).
+1. Connect to the `Code Engine project` with the  [Code Engine CLI](https://cloud.ibm.com/docs/codeengine?topic=codeengine-cli) and get the **namespace** for later usage to define the internal route.
 2. Deploy `web-app` to get needed route for the redirect of Keycloak 
 3. Deploy `Keycloak` simply as a container (that's the reason why not scale to zero (stateful)) 
-4. Configure the `Keycloak` realm json file based on the web-app url and create realm.
+4. Configure the `Keycloak` realm json file based on the `web-app` url and create realm.
 5. Deploy `articles` microservice is defined as `local cluster` here, we need to know the `namespace`. ([details are related to Knative](https://github.com/knative/serving/issues/7450))
 6. Deploy `web-api` with the needed `Keycloak` and articles urls as environment variables.
 7. Reconfigure `web-app` with the needed `Keycloak` and web-api urls as environment variables.
