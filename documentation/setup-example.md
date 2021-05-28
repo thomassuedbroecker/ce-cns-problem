@@ -85,7 +85,6 @@ ROOT_FOLDER=$(pwd)
 > REMEMBER! Your Code Engine project name `cloud-native-starter-[YOUR-EXTENTION]`
 
 ```sh
-cd $ROOT_FOLDER/CE
 export MYPROJECT=cloud-native-starter-[YOUR-EXTENTION]
 ```
 
@@ -94,6 +93,7 @@ export MYPROJECT=cloud-native-starter-[YOUR-EXTENTION]
 > Don't worry, this script may take several minutes.
 
 ```sh
+cd $ROOT_FOLDER/CE
 bash ce-deploy-apps.sh
 ```
 
