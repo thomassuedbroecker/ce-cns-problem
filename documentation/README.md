@@ -11,7 +11,7 @@ The workshop addresses the topic containerized applications on `IBM Cloud Code E
 After you complete this workshop, you'll have a basic understanding of the following:
 
   * Deploy an existing Java microservices `containerized` application example to `Code Engine`
-      * See the usage of the `IBM Cloud Code Engine CLI` and `kubectl` in the bash script automation
+      * See the usage of the `IBM Cloud Code Engine CLI`
   * Understand internal and external `HTTP/HTTPS routing` between the microservices
   * Use the `Out-Of-The-Box` monitoring for the example application
   * Use the `Out-Of-The-Box` logging for the example application
