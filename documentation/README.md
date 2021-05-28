@@ -20,7 +20,7 @@ After you complete this workshop, you'll have a basic understanding of the follo
 
 ### Prerequisites
 
-* In order to run this workshop, you will need to create an IBM Cloud `PayAsYouGo` account (or log in to your existing account).
+* In order to run this workshop, you will need to create an [IBM Cloud `PayAsYouGo` account]() (or log in to your existing account).
 
   > `Code Engine` has a `free tier` per month, and we expect, if you haven't used that `free tier` in current month, you can execute the workshop without creating any additional costs. For the monitoring and logging we will use free lite plans for the service instances [IBM Cloud Monitoring](https://cloud.ibm.com/docs/monitoring?topic=monitoring-getting-started#getting-started) and 
  [IBM Cloud Log Analysis](https://cloud.ibm.com/docs/log-analysis?topic=log-analysis-getting-started#getting-started).
@@ -127,10 +127,28 @@ The example mircorservices application example is build with following `technolo
 
 ### Credits
 
-  **TBD**
+  * [Thomas Südbröcker](https://twitter.com/tsuedbroecker)
+  * [Niklas Heidloff](https://twitter.com/nheidloff) (Feedback and Cloud Native Starter project)
+  * [Simon Moser](https://twitter.com/mosersd) (Feedback)
+  * [Doug Davis](https://twitter.com/duginabox) (Feedback)
 
 ### Additional resources
 
-  **TBD**
+  * IBM CLoud Code Engine:
+
+       * [Examples on GitHub](https://github.com/IBM/CodeEngine)
+       * [Code Engine CLI reference](https://cloud.ibm.com/docs/codeengine?topic=codeengine-cli)
+
+  * Cloud Native Starter example source code:
+
+       * [Cloud-Native-Starter project](https://github.com/IBM/cloud-native-starter)
+       * [Cloud-Native-Starter project security](https://github.com/IBM/cloud-native-starter/security)
+       * [Keycloak core concepts of open-source identity and access management](https://developers.redhat.com/blog/2019/12/11/keycloak-core-concepts-of-open-source-identity-and-access-management/)
+       * [Setting up Keycloak in OpenShift](http://heidloff.net/article/setting-up-keycloak-openshift/)
+       * [Security in Quarkus Applications via Keycloak](http://heidloff.net/article/security-quarkus-applications-keycloak/)
+       * [Securing Vue.js Applications with Keycloak](http://heidloff.net/article/securing-vue-js-applications-keycloak/)
+       * [Simply logout from Keycloak](https://suedbroecker.net/2021/05/18/simply-logout-from-keycloak/)
+       * [How to create a new realm with the Keycloak REST API](https://suedbroecker.net/2020/08/04/how-to-create-a-new-realm-with-the-keycloak-rest-api/)
+
 
 

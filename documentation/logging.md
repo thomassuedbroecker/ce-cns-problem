@@ -1,9 +1,5 @@
 # Lab 4: Logging of the applications
 
-**------------------**
-**UNDER CONSTRUCTION**
-**------------------**
-
 Here we use the [IBM Cloud Log Analysis](https://cloud.ibm.com/docs/log-analysis?topic=log-analysis-getting-started#getting-started) (lite plan).
 
 ### Open the logging for all applications

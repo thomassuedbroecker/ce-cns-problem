@@ -1,9 +1,5 @@
 # Lab 3: Application Monitoring
 
-**------------------**
-**UNDER CONSTRUCTION**
-**------------------**
-
 Here we use the [IBM Cloud Monitoring](https://cloud.ibm.com/docs/monitoring?topic=monitoring-getting-started#getting-started) (lite plan) service.
 
 ### Step 1: Go back to the project overview

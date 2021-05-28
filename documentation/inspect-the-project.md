@@ -1,9 +1,5 @@
 # Lab 2: Inspect the `Code Engine` project
 
-**------------------**
-**UNDER CONSTRUCTION**
-**------------------**
-
 ### Step 1: Open the `Code Engine` project
 
 Use following link to directly navigate to the Code Engine projects and open the created project.
