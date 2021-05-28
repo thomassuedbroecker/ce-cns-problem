@@ -22,9 +22,13 @@ nav:
     - 5. Cleanup the example application: cleanup-example.md
   
   - Additional Resources:
-    - Cloud-Native-Starter project: https://github.com/IBM/cloud-native-starter
-    - Cloud-Native-Starter project security: https://github.com/IBM/cloud-native-starter/security
-    - Keycloak core concepts of open-source identity and access management: https://developers.redhat.com/blog/2019/12/11/keycloak-core-concepts-of-open-source-identity-and-access-management/
+    - Cloud Native Starter example:
+       - Cloud-Native-Starter project: https://github.com/IBM/cloud-native-starter
+       - Cloud-Native-Starter project security: https://github.com/IBM/cloud-native-starter/security
+       - Keycloak core concepts of open-source identity and access management: https://developers.redhat.com/blog/2019/12/11/keycloak-core-concepts-of-open-source-identity-and-access-management/
+    - IBM CLoud Code Engine:
+       - Examples on GitHub: https://github.com/IBM/CodeEngine
+       - Code Engine CLI reference: https://cloud.ibm.com/docs/codeengine?topic=codeengine-cli
 
 ## DO NOT CHANGE BELOW THIS LINE
 
