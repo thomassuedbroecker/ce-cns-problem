@@ -1,4 +1,4 @@
-# Workshop: Get started with deploying a Java Microservices application to `Code Engine`
+# Workshop: Get started to deploy a Java Microservices application to `Code Engine`
 
 ### Objectives
 
