@@ -1,6 +1,5 @@
 # Lab 1: Setup the example application
 
-
 ### IBM Cloud Account
 
 #### Step 1: Create a `PayAsYouGo` IBM Cloud Account
