@@ -1,9 +1,5 @@
 # Workshop: Get Started with deploying a Java Microservices Application to `Code Engine`
 
-**------------------**
-**UNDER CONSTRUCTION**
-**------------------**
-
 ### Objectives
 
 The workshop addresses the topic containerized applications on `IBM Cloud Code Engine`.
