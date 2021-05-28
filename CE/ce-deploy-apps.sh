@@ -290,7 +290,7 @@ function deployWebApp(){
     ibmcloud ce application get --name web-app
     WEBAPP_URL=$(ibmcloud ce application get --name web-app | grep "https://web-app." |  awk '/web-app/ {print $2}')
     echo "Set WEBAPP URL: $WEBAPP_URL"
-
+    
     array=("web-app")
     for i in "${array[@]}"
     do 
@@ -323,7 +323,7 @@ function updateWebApp(){
                                 --env VUE_APP_WEBAPI="$WEBAPI_URL"
 
     ibmcloud ce application get --name web-app
-    WEBAPP_URL=$(ibmcloud ce application get --name web-api | grep "https://web-app." |  awk '/web-api/ {print $2}')
+    WEBAPP_URL=$(ibmcloud ce application get --name web-app | grep "https://web-app." |  awk '/web-app/ {print $2}')
     echo "Set WEBAPP URL: $WEBAPP_URL"
 
     array=("web-app-00002")
