@@ -480,6 +480,8 @@
       "redirectUris": [
         "http://localhost:8080/*",
         "http://localhost:8080/*/*",
+        "http://localhost:8081/*",
+        "http://localhost:8081/*/*",
         "https://localhost:8080/cloud-native-starter/*",
         "https://localhost:8080/cloud-native-starter/*/*",
         "https://YOUR-URL/*",

@@ -20,7 +20,8 @@ nav:
     - 3. Monitoring of the applications: monitoring.md
     - 4. Logging of the applications: logging.md
     - 5. Cleanup the example application: cleanup-example.md
-  
+  - Optional Lab: 
+    - 1. Run the example application locally: run-application-locally.md
   - Additional Resources:
     - Cloud Native Starter example:
        - Cloud-Native-Starter project: https://github.com/IBM/cloud-native-starter

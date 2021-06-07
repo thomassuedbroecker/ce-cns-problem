@@ -22,9 +22,9 @@ let urls;
 if (currentHostname.indexOf('localhost') > -1) {
   console.log("--> log: option 1");
   urls = {
-    api: 'http://localhost:8081',
+    api: 'http://localhost:8082',
     login: 'http://localhost:8282/auth',
-    cns: 'http://localhost:8080'
+    cns: 'http://localhost:8081'
   }
   store.commit("setAPIAndLogin", urls);
 }
