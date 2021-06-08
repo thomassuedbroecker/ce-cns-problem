@@ -13,7 +13,6 @@ docs_dir: documentation
 nav:
   - Introduction:
      - Workshop overview: README.md
-  
   - Labs: 
     - 1. Setup the example application: setup-example.md
     - 2. Inspect the `Code Engine` project: inspect-the-project.md 
