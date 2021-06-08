@@ -41,4 +41,4 @@ For more details please use the [IBM Cloud Code Engine documentation for monitor
 
 ---
 
- > Congratulations, you have successfully completed this hands-on lab `Application Monitoring` of the workshop. Awesome :star:
+> Congratulations, you have successfully completed this hands-on lab `Application Monitoring` of the workshop. Awesome :star:

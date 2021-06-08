@@ -142,4 +142,4 @@ Just refresh the browser and then you should see following page.
 
  ---
 
- > Congratulations, you have successfully completed this hands-on lab `Setup the example application` of the workshop. Awesome :star:
+> Congratulations, you have successfully completed this hands-on lab `Setup the example application` of the workshop. Awesome :star:

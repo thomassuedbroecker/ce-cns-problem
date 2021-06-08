@@ -72,5 +72,4 @@ OK
 
 ---
 
- > Congratulations, you have successfully completed this hands-on workshop. Awesome you did it :star:
- :star: :star:
+> Congratulations, you have successfully completed this hands-on workshop. Awesome you did it :star:  :star: :star:
