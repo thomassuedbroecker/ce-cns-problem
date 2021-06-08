@@ -12,15 +12,15 @@ docs_dir: documentation
 # Navigation
 nav:
   - Introduction:
-     - Workshop overview: README.md
+     - Workshop overview: ./README.md
   - Labs: 
-    - 1. Setup the example application: setup-example.md
-    - 2. Inspect the `Code Engine` project: inspect-the-project.md 
-    - 3. Monitoring of the applications: monitoring.md
-    - 4. Logging of the applications: logging.md
-    - 5. Cleanup the example application: cleanup-example.md
+    - 1. Setup the example application: ./setup-example.md
+    - 2. Inspect the `Code Engine` project: ./inspect-the-project.md 
+    - 3. Monitoring of the applications: ./monitoring.md
+    - 4. Logging of the applications: ./logging.md
+    - 5. Cleanup the example application: ./cleanup-example.md
   - Optional Lab: 
-    - Run the example application locally: run-application-locally.md
+    - Run the example application locally: ./run-application-locally.md
   - Additional Resources:
     - Cloud Native Starter example:
        - Cloud-Native-Starter project: https://github.com/IBM/cloud-native-starter
