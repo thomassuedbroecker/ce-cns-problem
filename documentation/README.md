@@ -143,7 +143,7 @@ The example mircorservices application example is build with following `technolo
        * [Cloud-Native-Starter project](https://github.com/IBM/cloud-native-starter)
        * [Cloud-Native-Starter project security](https://github.com/IBM/cloud-native-starter/security)
 
-    * Keycloak
+  * Keycloak
 
        * [Keycloak core concepts of open-source identity and access management](https://developers.redhat.com/blog/2019/12/11/keycloak-core-concepts-of-open-source-identity-and-access-management/)
        * [Setting up Keycloak in OpenShift](http://heidloff.net/article/setting-up-keycloak-openshift/)
@@ -152,16 +152,16 @@ The example mircorservices application example is build with following `technolo
        * [Simply logout from Keycloak](https://suedbroecker.net/2021/05/18/simply-logout-from-keycloak/)
        * [How to create a new realm with the Keycloak REST API](https://suedbroecker.net/2020/08/04/how-to-create-a-new-realm-with-the-keycloak-rest-api/)
        
-    * Quarkus
+  * Quarkus
 
        * [How to use environment variables to make a containerized Quarkus application more flexible](https://suedbroecker.net/2021/05/31/how-to-use-environment-variables-to-make-a-containerized-quarkus-application-more-flexible/)
        * [Configure the attach debug for Quarkus in Visual Studio Code](https://suedbroecker.net/2021/04/29/configure-the-attach-debug-for-quarkus-in-visual-studio-code/)
 
-    * Vue.js
+  * Vue.js
+  
        * [Use environment variables to make a containerized Vue.js frontend application more flexible and deploy it to Code Engine](https://suedbroecker.net/2021/06/07/use-environment-variables-to-make-a-containerized-vue-js-frontend-application-more-flexible-and-deploy-it-to-code-engine/)
        * [How to debug the Javascript code of a Vue.js application using Visual Studio Code](https://suedbroecker.net/2021/05/17/how-to-debug-a-javascript-code-of-a-vue-js-application-using-visual-studio-code/)
 
-    check
 
 
 
