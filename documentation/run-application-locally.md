@@ -118,7 +118,7 @@ if (currentHostname.indexOf('localhost') > -1) {
 
 #### Step 2: Run the web-app
 
-Open the second terminal session and start the application on port 8080.
+Open the second terminal session and start the application on port 8081.
 
 ```sh
 cd $ROOT_FOLDER/web-app
@@ -156,10 +156,10 @@ cns.articles-url=${CNS_ARTICLES_URL:'http://localhost:8083/articles'}
 
 #### Step 2: Run the web-api Microservice
 
-Open a third terminal and start the service on port 8081.
+Open a third terminal and start the service on port 8082.
 
 ```sh
-cd $ROOT_FOLDER/web-api-secure
+cd $ROOT_FOLDER/web-api
 mvn clean package quarkus:dev
 ```
 
@@ -167,7 +167,7 @@ mvn clean package quarkus:dev
 
 #### Step 1: Configure articles 
 
-When you run the articles microservice locally ensure you have uncomment `quarkus.http.port=8082` and `# quarkus.http.port=8080` commented out.
+When you run the articles microservice locally ensure you have uncomment `quarkus.http.port=8083` and `# quarkus.http.port=8080` commented out.
 
 ```sh
 cd $ROOT_FOLDER/articles-secure/src/main/resources
@@ -185,15 +185,15 @@ quarkus.oidc.credentials.secret=secret
 
 # quarkus.http.port=8080
 # When running locally, uncomment the next line, to use the port 8082
-quarkus.http.port=8082
+quarkus.http.port=8083
 quarkus.http.cors=true
 
 resteasy.role.based.security=true
 ```
 
-#### Step 2: Run the articles-secure Microservice
+#### Step 2: Run the articles Microservice
 
-Open a fourth terminal and start the service on port 8081.
+Open a fourth terminal and start the service on port 8083.
 
 ```sh
 cd $ROOT_FOLDER/articles
