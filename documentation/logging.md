@@ -2,6 +2,13 @@
 
 Here we use the [IBM Cloud Log Analysis](https://cloud.ibm.com/docs/log-analysis?topic=log-analysis-getting-started#getting-started) (lite plan).
 
+> You can create the lite service instances for logging and monitoring by using this bash script.
+
+```sh
+cd $ROOT_FOLDER/CE
+bash ce-create-monitoring-logging-services.sh
+```
+
 ### Open the logging for all applications
 
 #### Step 1: Go back to the project overview
@@ -12,7 +19,7 @@ Here we use the [IBM Cloud Log Analysis](https://cloud.ibm.com/docs/log-analysis
 
 ![](images/cns-ce-logging-01.png)
 
-In case you don't have an existing instance of `IBM Cloud Log Analysis` Code Engine will automatically guide you to create a  `lite plan` instance, when you select `Actions -> Add logging`.
+In case you don't have an existing instance of `IBM Cloud Log Analysis` Code Engine will automatically guide you to create a `lite plan` instance, when you select `Actions -> Add logging`.
 
 ![](images/cns-ce-logging-04.png)
 

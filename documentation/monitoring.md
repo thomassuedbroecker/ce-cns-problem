@@ -2,6 +2,13 @@
 
 Here we use the [IBM Cloud Monitoring](https://cloud.ibm.com/docs/monitoring?topic=monitoring-getting-started#getting-started) (lite plan) service.
 
+> You can create the lite service instances for logging and monitoring by using this bash script.
+
+```sh
+cd $ROOT_FOLDER/CE
+bash ce-create-monitoring-logging-services.sh
+```
+
 ### Step 1: Go back to the project overview
 
 ![](images/cns-ce-monitoring-01.png)
