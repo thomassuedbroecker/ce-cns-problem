@@ -184,7 +184,7 @@ quarkus.oidc.client-id=backend-service
 quarkus.oidc.credentials.secret=secret
 
 # quarkus.http.port=8080
-# When running locally, uncomment the next line, to use the port 8082
+# When running locally, uncomment the next line, to use the port 8083
 quarkus.http.port=8083
 quarkus.http.cors=true
 
