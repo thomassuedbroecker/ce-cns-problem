@@ -5,6 +5,11 @@ We use the free [Red Hat Quay.io](https://quay.io) as our example container regi
 
 > You can also use the [IBM Cloud Registry](https://cloud.ibm.com/registry/catalog) which has a free lite plan with limited resources of Storage (Gigabyte-Months) - 0.5 GB free per month and pull traffic (Gigabytes) - 5 GB free per month. Please visit the [IBM Cloud Registry catalog for the current pricing](https://cloud.ibm.com/registry/catalog).
 
+To run these optional exercises you need to ensure you have installed the following tools on your local machine and you can run them in your terminal sessions.
+
+* [git 2.24.1 or higher](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+* [Docker 3.0.4 or higher](https://www.docker.com/products/docker-desktop)
+
 ### Step 1: Login to Quay on your local machine
 
 ```sh
@@ -93,10 +98,3 @@ export REPOSITORY=tsuedbroecker
 ---
 
 > Congratulations, you have successfully completed this optional hands-on lab tasks for `Push the example containers to a container registry` section of the workshop. Awesome :star:
-
-
-
-
-
-
-
