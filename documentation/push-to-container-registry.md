@@ -95,6 +95,7 @@ export RESOURCE_GROUP=default
 export REPOSITORY=tsuedbroecker
 ...
 ```
+
 ---
 
 > Congratulations, you have successfully completed this optional hands-on lab tasks for `Push the example containers to a container registry` section of the workshop. Awesome :star:
