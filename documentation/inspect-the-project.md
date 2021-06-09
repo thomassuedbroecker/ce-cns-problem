@@ -61,3 +61,4 @@ _Note:_ In following code you see the `Code Engine CLI` invocation for the `web-
 ---
 
 > Congratulations, you have successfully completed this hands-on lab ` Inspect the Code Engine project` of the workshop. Awesome :star:
+
