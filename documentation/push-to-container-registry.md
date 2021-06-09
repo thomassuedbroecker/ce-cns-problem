@@ -89,11 +89,11 @@ nano ce-deploy-apps.sh
 2. In case you have just change the repository name, you only have to replace `tsuedbroecker` with your value and it should work.
 
 ```sh
-# **************** Global variables
-
+...
 export PROJECT_NAME=$MYPROJECT
 export RESOURCE_GROUP=default
 export REPOSITORY=tsuedbroecker
+...
 ```
 ---
 
