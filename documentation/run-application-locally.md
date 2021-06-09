@@ -1,4 +1,4 @@
-# Optional Lab: Run the example application locally
+# Optional Lab 1: Run the example application locally
 
 To run these optional exercises you need to ensure you have installed the following tools on your local machine and you can run them in your terminal sessions.
 
@@ -30,7 +30,7 @@ The gif shows the logon to the example web frontend application. This is the sim
 
 ```sh
 git clone https://github.com/thomassuedbroecker/ce-cns.git
-cd ce-cns/code
+cd ce-cns
 ROOT_FOLDER=$(pwd)
 ```
 
@@ -98,7 +98,7 @@ You should see following users: `admin`, `alice`, `jdoe`
 The web-app is preconfigured for local usage of Keycloak (`http://localhost:8282/auth`) and web-api (`http://localhost:8082/articles`) and save the changes.
 
 ```sh
-cd $ROOT_FOLDER/web-app/src
+cd $ROOT_FOLDER/code/web-app/src
 nano main.js
 ```
 
@@ -121,7 +121,7 @@ if (currentHostname.indexOf('localhost') > -1) {
 Open the second terminal session and start the application on port 8081.
 
 ```sh
-cd $ROOT_FOLDER/web-app
+cd $ROOT_FOLDER/code/web-app
 yarn install
 yarn serve
 ```
@@ -133,7 +133,7 @@ yarn serve
 When we run the example application locally, we don't need to change source code for the **web-api** microservce.
 
 ```sh
-cd $ROOT_FOLDER/web-api-secure/src/main/resources
+cd $ROOT_FOLDER/code/web-api/src/main/resources
 nano application.properties
 ```
 
@@ -159,7 +159,7 @@ cns.articles-url=${CNS_ARTICLES_URL:'http://localhost:8083/articles'}
 Open a third terminal and start the service on port 8082.
 
 ```sh
-cd $ROOT_FOLDER/web-api
+cd $ROOT_FOLDER/code/web-api
 mvn clean package quarkus:dev
 ```
 
@@ -167,10 +167,10 @@ mvn clean package quarkus:dev
 
 #### Step 1: Configure articles 
 
-When you run the articles microservice locally ensure you have uncomment `quarkus.http.port=8083` and `# quarkus.http.port=8080` commented out.
+When you run the articles microservice locally ensure you have uncomment `quarkus.http.port=8083` and `#quarkus.http.port=8080` commented out.
 
 ```sh
-cd $ROOT_FOLDER/articles-secure/src/main/resources
+cd $ROOT_FOLDER/code/articles/src/main/resources
 nano application.properties
 ```
 
@@ -196,7 +196,7 @@ resteasy.role.based.security=true
 Open a fourth terminal and start the service on port 8083.
 
 ```sh
-cd $ROOT_FOLDER/articles
+cd $ROOT_FOLDER/code/articles
 mvn clean package quarkus:dev
 ```
 

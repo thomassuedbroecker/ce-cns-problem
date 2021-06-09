@@ -1,5 +1,5 @@
 #!/bin/bash
-export REPOSITORY=tsuedbroecker
+export REPOSITORY=$MY_REPOSITORY
 
 cd ..
 export ROOT_PATH=$(PWD)

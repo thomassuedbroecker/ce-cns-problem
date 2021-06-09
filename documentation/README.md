@@ -90,7 +90,9 @@ These are the sections of this workshop, go through all of them in sequence, sta
  5. [Cleanup the example application](./cleanup-example.md)
 
 Optional Labs: 
- 1. [Run the example application locally](run-application-locally.md)
+ 
+ 1. [Run the example application locally](./run-application-locally.md)
+ 2. [Push the example containers to a container registry](./push-to-container-registry.md)
 
 ### Compatibility
 
@@ -122,7 +124,6 @@ The example mircorservices application example is build with following `technolo
   * [yarn 1.22.4 or higher](https://yarnpkg.com)
   * [Node.js v14.6.0 or higher](https://nodejs.org/en/)
   * [Apache Maven 3.6.3](https://maven.apache.org/ref/3.6.3/maven-embedder/cli.html)
-
 
 ### Credits
 
