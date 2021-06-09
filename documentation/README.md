@@ -68,7 +68,6 @@ The `Keycloak` application for the `Identity and Access Manegement` isn't config
 
 _Note:_ The project also contains the source code, that you can use to customize to your an own version of the microservices based example application.
 
-
 ### About this workshop
 
 <!-- The introductory page of the workshop is broken down into the following sections:
